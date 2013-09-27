@@ -1,0 +1,46 @@
+\documentclass[a4paper,
+               10pt,
+               fleqn]{article}
+
+\author{Ervin Mazlagic}
+\title{Programming and Algorithms}
+
+\usepackage{luxpaper}
+\usepackage{mytitle}
+\usepackage{multicol}
+
+
+\makeglossaries
+
+\include{glossar}
+
+\begin{document}
+\luxtitle{Lucerne University of Applied Sciences and Arts}
+	 {Programming and Algorithms}
+         {Personal Documentation}
+         {Ervin Mazlagi\'c}
+         {Horw, autumn 2013}
+
+\tableofcontents
+\newpage
+
+\section{Preface}
+This is a personal documentation and notebook for the first course in 
+programming at the Lucerne University of Applied Sciences and Arts.
+The goal of this document is to collect useful informations and nice
+snippets of code out of the course.
+
+This document shall not be provided as a official or unofficial 
+cheatsheet for the course exam or similar.
+
+\include{objects-and-classes}
+
+\begin{multicols}{2}
+
+\glossarystyle{altlistgroup}
+\glsaddall
+\printglossaries
+
+\end{multicols}
+
+\end{document}

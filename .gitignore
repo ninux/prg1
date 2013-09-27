@@ -11,3 +11,7 @@ intro
 *.DS_Store
 *.swp
 *.out
+
+## ignore the LaTeX-Data from github.com/luxeria/luxtex
+luxtex
+documentation/luxtex

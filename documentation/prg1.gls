@@ -1,0 +1,48 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\providecommand*\glsXpageXglsnumberformat[2]{\setentrycounter[#1]{page}\glsnumberformat{#2}}
+\providecommand*\glsXpageXtextrm[2]{\setentrycounter[#1]{page}\textrm{#2}}
+\providecommand*\glsXpageXtextsf[2]{\setentrycounter[#1]{page}\textsf{#2}}
+\providecommand*\glsXpageXtexttt[2]{\setentrycounter[#1]{page}\texttt{#2}}
+\providecommand*\glsXpageXtextbf[2]{\setentrycounter[#1]{page}\textbf{#2}}
+\providecommand*\glsXpageXtextmd[2]{\setentrycounter[#1]{page}\textmd{#2}}
+\providecommand*\glsXpageXtextit[2]{\setentrycounter[#1]{page}\textit{#2}}
+\providecommand*\glsXpageXtextup[2]{\setentrycounter[#1]{page}\textup{#2}}
+\providecommand*\glsXpageXtextsl[2]{\setentrycounter[#1]{page}\textsl{#2}}
+\providecommand*\glsXpageXtextsc[2]{\setentrycounter[#1]{page}\textsc{#2}}
+\providecommand*\glsXpageXemph[2]{\setentrycounter[#1]{page}\emph{#2}}
+\providecommand*\glsXpageXglshypernumber[2]{\setentrycounter[#1]{page}\glshypernumber{#2}}
+\providecommand*\glsXpageXhyperrm[2]{\setentrycounter[#1]{page}\hyperrm{#2}}
+\providecommand*\glsXpageXhypersf[2]{\setentrycounter[#1]{page}\hypersf{#2}}
+\providecommand*\glsXpageXhypertt[2]{\setentrycounter[#1]{page}\hypertt{#2}}
+\providecommand*\glsXpageXhyperbf[2]{\setentrycounter[#1]{page}\hyperbf{#2}}
+\providecommand*\glsXpageXhypermd[2]{\setentrycounter[#1]{page}\hypermd{#2}}
+\providecommand*\glsXpageXhyperit[2]{\setentrycounter[#1]{page}\hyperit{#2}}
+\providecommand*\glsXpageXhyperup[2]{\setentrycounter[#1]{page}\hyperup{#2}}
+\providecommand*\glsXpageXhypersl[2]{\setentrycounter[#1]{page}\hypersl{#2}}
+\providecommand*\glsXpageXhypersc[2]{\setentrycounter[#1]{page}\hypersc{#2}}
+\providecommand*\glsXpageXhyperemph[2]{\setentrycounter[#1]{page}\hyperemph{#2}}
+\begin{theglossary}\glossaryheader
+\glsgroupheading{C}\relax\glsresetentrylist
+\glossaryentryfield{class}{\glsnamefont{class}}{describes the kind of an object; the objects represent individual instatioations of the class}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{5}}}\glsgroupskip
+\glsgroupheading{I}\relax\glsresetentrylist
+\glossaryentryfield{instance}{\glsnamefont{instance}}{is a realisation of a class to a real object, so instance is a synonym to object}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{5}}}\glsgroupskip
+\glsgroupheading{M}\relax\glsresetentrylist
+\glossaryentryfield{method}{\glsnamefont{method}}{is a function of a specific class that can be invoked on a object of the given class. Objects usually do something if a method is invoked}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{5}}}\glsgroupskip
+\glsgroupheading{O}\relax\glsresetentrylist
+\glossaryentryfield{object}{\glsnamefont{object}}{is an instance of a class}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{5}}}\glsgroupskip
+\glsgroupheading{P}\relax\glsresetentrylist
+\glossaryentryfield{parameter}{\glsnamefont{parameter}}{is a additional information to a task (method)}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{5}}}\glsgroupskip
+\glsgroupheading{S}\relax\glsresetentrylist
+\glossaryentryfield{signature}{\glsnamefont{signature}}{is the part of a method that identifies it to the compiler. For example the signature of \lstinline {public setSpeed(int newSpeed, int newTolerance)} is not the whole head of the method but the name \lstinline {setSpeed} and the list of parameter-types \lstinline {int ..., int ...}}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{5}}}\relax\glsresetentrylist
+\glossaryentryfield{state}{\glsnamefont{state}}{is the set of data (called variables or fileds) that belongs to a specific object. "The state is represented by storing values in fields"}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{5}}}\glsgroupskip
+\glsgroupheading{T}\relax\glsresetentrylist
+\glossaryentryfield{type}{\glsnamefont{type}}{defines the kind of data or value (for example to a parameter or return value (see data types)}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{5}}}%
+\end{theglossary}\glossarypostamble
