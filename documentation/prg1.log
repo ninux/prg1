@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2013.9.24)  27 SEP 2013 22:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2013.9.24)  27 SEP 2013 23:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1597,7 +1597,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--21
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
@@ -1611,21 +1611,21 @@ File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
 (Font)              Font shape `T1/pcr/b/n' tried instead on input line 22.
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--27
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
 (/usr/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
-Underfull \hbox (badness 10000) in paragraph at lines 31--33
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
 
  []
 
 (/usr/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
-Underfull \hbox (badness 10000) in paragraph at lines 37--39
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
@@ -1638,7 +1638,7 @@ File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 (/usr/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
 
@@ -1671,11 +1671,11 @@ Package rerunfilecheck Info: File `prg1.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 46.
  ) 
 Here is how much of TeX's memory you used:
- 30445 strings out of 493311
- 543742 string characters out of 6143650
+ 30447 strings out of 493311
+ 543765 string characters out of 6143650
  908300 words of memory out of 5000000
- 33188 multiletter control sequences out of 15000+600000
- 42072 words of font info for 46 fonts, out of 8000000 for 9000
+ 33189 multiletter control sequences out of 15000+600000
+ 46335 words of font info for 47 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  63i,11n,74p,3236b,1910s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{page.5} has been referenced but does not exist, r
@@ -1685,12 +1685,13 @@ eplaced by a fixed one
 /enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
 ></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist
 /fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/l
-mr12.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/
-texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on prg1.pdf (5 pages, 133913 bytes).
+mr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/te
+xmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texmf-dist/fonts/type1/
+urw/courier/ucrr8a.pfb>
+Output written on prg1.pdf (5 pages, 152158 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 90 compressed objects within 1 object stream
+ 108 PDF objects out of 1000 (max. 8388607)
+ 93 compressed objects within 1 object stream
  26 named destinations out of 1000 (max. 500000)
  37 words of extra memory for PDF output out of 10000 (max. 10000000)
 
