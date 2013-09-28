@@ -24,28 +24,28 @@
 \begin{theglossary}\glossaryheader
 \glsgroupheading{C}\relax\glsresetentrylist
 \glossaryentryfield{class}{\glsnamefont{class}}{A class describes the kind of an object. This is done by giving instance variables and methods. The objects represents individual instatioations of the class}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{7}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{8}}}\glsgroupskip
 \glsgroupheading{F}\relax\glsresetentrylist
 \glossaryentryfield{field}{\glsnamefont{field}}{Fields store data for an object to use. Fields are also known as instance variables.}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{7}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{8}}}\glsgroupskip
 \glsgroupheading{I}\relax\glsresetentrylist
 \glossaryentryfield{instance}{\glsnamefont{instance}}{An instance is a realisation of a class to a real object, so instance is a synonym to object}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{7}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{8}}}\glsgroupskip
 \glsgroupheading{M}\relax\glsresetentrylist
 \glossaryentryfield{method}{\glsnamefont{method}}{A method is a action (function) of a specific class that can be invoked on an object of the given class. Objects usually do something when a method is invoked, so a good keyword to it would be \textit {what}, as most methods are named by a verb}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{7}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{8}}}\glsgroupskip
 \glsgroupheading{O}\relax\glsresetentrylist
 \glossaryentryfield{object}{\glsnamefont{object}}{An object is a instance of a class}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{7}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{8}}}\glsgroupskip
 \glsgroupheading{P}\relax\glsresetentrylist
 \glossaryentryfield{parameter}{\glsnamefont{parameter}}{Addition information (data) given to a method or object is called parameter}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{7}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{8}}}\glsgroupskip
 \glsgroupheading{S}\relax\glsresetentrylist
 \glossaryentryfield{signature}{\glsnamefont{signature}}{The signature of a method is the part that identifies it to the compiler. For example the signature of \lstinline {public setSpeed(int newSpeed, int newTolerance)} is not the whole head of the method but the name \lstinline {setSpeed} and the list of parameter-types \lstinline {int ..., int ...}}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{7}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{8}}}\relax\glsresetentrylist
 \glossaryentryfield{state}{\glsnamefont{state}}{A object or its status is represented by his state. The state is represented by the values in the fields (instance variables)}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{7}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{8}}}\glsgroupskip
 \glsgroupheading{T}\relax\glsresetentrylist
 \glossaryentryfield{type}{\glsnamefont{type}}{The type defines the kind of data or value (for example to a parameter, return value (see data types) or a variable}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{7}}}%
+\glsXpageXglsnumberformat{}{8}}}%
 \end{theglossary}\glossarypostamble
