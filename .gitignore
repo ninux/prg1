@@ -15,3 +15,12 @@ intro
 ## ignore the LaTeX-Data from github.com/luxeria/luxtex
 luxtex
 documentation/luxtex
+
+## temporary latex files
+*.aux
+*.glg
+*.glo
+*.gls
+*.log
+*.toc
+*.xdy
