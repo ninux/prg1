@@ -1,9 +1,9 @@
 \newglossaryentry{state}
 {
 	name=state,
-	description={is the set of data (called variables or fileds) that
-		belongs to a specific object. "The state is represented by
-		storing values in fields"},
+	description={A object or its status is represented by his state.
+		The state is represented by the values in the fields
+		(instance variables)},
 	sort=state
 }
 
@@ -11,8 +11,9 @@
 \newglossaryentry{class}
 {
 	name=class,
-	description={describes the kind of an object; the objects represent
-		individual instatioations of the class},
+	description={A class describes the kind of an object. This is done
+		by giving instance variables and methods. The objects 
+		represents individual instatioations of the class},
 	plural=classes,
 	sort=class
 }
@@ -20,7 +21,7 @@
 \newglossaryentry{object}
 {
 	name=object,
-	description={is an instance of a class},
+	description={An object is a instance of a class},
 	plural=objects,
 	sort=object
 }
@@ -28,9 +29,10 @@
 \newglossaryentry{method}
 {
 	name=method,
-	description={is a function of a specific class that can be invoked on
-		a object of the given class. Objects usually do something if a
-		method is invoked},
+	description={A method is a action (function) of a specific class that
+		can be invoked on an object of the given class. Objects usually
+		do something when a method is invoked, so a good keyword to it
+		would be \textit{what}, as most methods are named by a verb},
 	plural=methods,
 	sort=method
 }
@@ -38,7 +40,8 @@
 \newglossaryentry{parameter}
 {
 	name=parameter,
-	description={is a additional information to a task (method)},
+	description={Addition information (data) given to a method or object
+		is called parameter},
 	plural=parameters,
 	sort=parameter
 }
@@ -46,8 +49,8 @@
 \newglossaryentry{signature}
 {
 	name=signature,
-	description={is the part of a method that identifies it to the 
-		compiler. For example the signature of 
+	description={The signature of a method is the part that identifies 
+		it to the compiler. For example the signature of 
 		\lstinline{public setSpeed(int newSpeed, int newTolerance)}
 		is not the whole head of the method but the name 
 		\lstinline{setSpeed} and the list of parameter-types 
@@ -59,8 +62,8 @@
 \newglossaryentry{type}
 {
 	name=type,
-	description={defines the kind of data or value (for example to a
-		parameter or return value (see data types)},
+	description={The type defines the kind of data or value (for example 
+		to a parameter, return value (see data types) or a variable},
 	plural=types,
 	sort=type
 }
@@ -68,8 +71,18 @@
 \newglossaryentry{instance}
 {
 	name=instance,
-	description={is a realisation of a class to a real object, so instance
-		is a synonym to object},
+	description={An instance is a realisation of a class to a real object,
+		so instance is a synonym to object},
 	plural=instances,
 	sort=instance
 }
+
+\newglossaryentry{field}
+{
+	name=field,
+	description={Fields store data for an object to use. Fields are also
+		known as instance variables.},
+	plural=fields,
+	sort=field
+}
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2013.9.24)  27 SEP 2013 23:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2013.9.24)  28 SEP 2013 12:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1457,7 +1457,8 @@ Package glossaries Info: Writing glossary file prg1.glo on input line 13.
 \@input{glossar.aux}
 \openout2 = `glossar.aux'.
 
-(./glossar.tex) (./prg1.aux (./objects-and-classes.aux))
+(./glossar.tex) (./prg1.aux (./objects-and-classes.aux)
+(./understanding-class-definitions.aux))
 \openout1 = `prg1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -1644,54 +1645,63 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
 ) [3
 
-] (./prg1.gls (/usr/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-)
-(/usr/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-)
-(/usr/share/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-)
-Underfull \hbox (badness 5578) in paragraph at lines 42--44
-\T1/lmr/m/n/10 is the part of a method that iden-ti-
- []
+]
+\openout2 = `understanding-class-definitions.aux'.
 
+ (./understanding-class-definitions.tex
+(/usr/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 46.
- [4
+(../workspace/naive-ticket-machine/src/foobar/TicketMachine.java [4
+
+
+])
+(/usr/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+)
+(../workspace/naive-ticket-machine/src/foobar/Main.java [5])) [6] (./prg1.gls
+(/usr/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+)
+(/usr/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+)
+(/usr/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+))
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 48.
+ [7
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
- (./prg1.aux (./objects-and-classes.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 46.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 46.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 48.
+ (./prg1.aux
+(./objects-and-classes.aux) (./understanding-class-definitions.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 48.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 48.
 Package rerunfilecheck Info: File `prg1.out' has not changed.
-(rerunfilecheck)             Checksum: 837F8DD8EF54E07C587903364FD3CCEC;162.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 46.
+(rerunfilecheck)             Checksum: 3A0B54A9AC134F39B53E988F562CF094;361.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 48.
  ) 
 Here is how much of TeX's memory you used:
- 30447 strings out of 493311
- 543765 string characters out of 6143650
- 908300 words of memory out of 5000000
- 33189 multiletter control sequences out of 15000+600000
- 46335 words of font info for 47 fonts, out of 8000000 for 9000
+ 30637 strings out of 493311
+ 546943 string characters out of 6143650
+ 966263 words of memory out of 5000000
+ 33247 multiletter control sequences out of 15000+600000
+ 49316 words of font info for 48 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 63i,11n,74p,3236b,1910s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{page.5} has been referenced but does not exist, r
-eplaced by a fixed one
+ 63i,12n,74p,3236b,2241s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fo
+nts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.p
+fb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-di
+st/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm
+/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/share/te
+xmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/ur
+w/courier/ucrb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
 
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fonts
-/enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
-></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist
-/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/l
-mr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/te
-xmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texmf-dist/fonts/type1/
-urw/courier/ucrr8a.pfb>
-Output written on prg1.pdf (5 pages, 152158 bytes).
+Output written on prg1.pdf (8 pages, 194701 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
- 93 compressed objects within 1 object stream
- 26 named destinations out of 1000 (max. 500000)
- 37 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 272 PDF objects out of 1000 (max. 8388607)
+ 251 compressed objects within 3 object streams
+ 138 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
