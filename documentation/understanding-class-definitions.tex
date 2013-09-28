@@ -18,6 +18,34 @@ be done.
 \lstinputlisting[caption=Main (TicketMachine)]{../workspace/naive-ticket-machine/src/foobar/Main.java}
 
 \newpage
+\subsection{Chapter Exercises}
+\subsubsection*{Exercise 2.21}
+\textit{Suppose that the class Pet has a field called name that is of type
+	String. Write an assignment statement in the body of the following 
+	constructor so that the name field will be initialized with the value
+	of the constructor's parameter.}\\
+
+\begin{lstlisting}
+public Pet(String petsName)
+{
+	name = petsName;
+}
+\end{lstlisting}
+
+\subsubsection*{Exercise 2.22 (challenge)}
+\textit{The following object creation will result in the constructor of the
+	Date class being called. Can you write the constructor's header?\\
+	\indent \lstinline{new Date("March", 23, 1861)}\\
+	Try to give meaningful names to the paramenters.}\\
+
+\begin{lstlisting}
+public Date(String month, int day, int year)
+{
+	...
+}
+\end{lstlisting}
+
+\newpage
 \subsection{Selfstudy-Questions OOP2}
 \subsubsection*{Exercise 4}
 \textit{A class is build by three essential components. What are they?}\\
