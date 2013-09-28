@@ -50,52 +50,189 @@ public Date(String month, int day, int year)
 \subsubsection*{Exercise 4}
 \textit{A class is build by three essential components. What are they?}\\
 
+\begin{itemize}
+	\item Instance variables (member variables, attributes)
+	\item constructor
+	\item methods
+\end{itemize}
+
 \subsubsection*{Exercise 5}
 \textit{What is the order of the three components?}\\
+
+The order doesn't matter technically but there is a common convention:
+\begin{enumerate}
+	\item instance variables
+	\item constructor
+	\item methods
+\end{enumerate}
 
 \subsubsection*{Exercise 6}
 \textit{What's their purpose?}\\
 
+\begin{description}
+	\item [instance variables] are holding data of an object. All of this
+		data together builds the object's state.
+	\item [constructor] is a special method that initializes objects.
+	\item [methods] are sequences which are defining the object's 
+		behaviour and characteristics.
+\end{description}
+
 \subsubsection*{Exercise 8}
 \textit{What is a variable?}\\
+
+A variable (or field) is a data storage inside an object that can be used for
+persistent data storage (limited by the lifetime of the object).
 
 \subsubsection*{Exercise 9}
 \textit{What are the synonyms to instance variables?}\\
 
+\begin{itemize}
+	\item member variable
+	\item attibute
+	\item filed
+	\item variable
+\end{itemize}
+
 \subsubsection*{Exercise 10}
 \textit{What do you think where the term instance variable comes from?}\\
 
+An instance is a realisation of an class by an object. The expression variable
+is well defined an known in computer science and if a variable explicitly
+belongs to an object, so it's clear that this is a variable of an instance or
+instance variable.
+
 \subsubsection*{Exercise 11}
 \textit{How can you put comments into a Java-Code?}\\
+
+There are different ways to add comments in a Java source file without having
+trouble with the compiler.
+
+\begin{itemize} 
+	\item Use the single line comment by double slash.
+\begin{lstlisting}
+// this method return the speed
+private void getSpeed()
+\end{lstlisting}
+	\item Use the multiline comment by slash-dot
+\begin{lstlisting}
+/**
+ * This is a method that will return the
+ * actual speed of the monstetruck that
+ * is driven by the crazy clown IT .
+ */
+private void getSpeed()
+\end{lstlisting}
+\end{itemize}
 
 \subsubsection*{Exercise 12 (important)}
 \textit{With which access-modification do you declare instance variables
 	usually? Is it \lstinline{private} or \lstinline{public}? Do you
 	have a reason for your answer?}\\
+Usually we declare instance variables as private. The reason for this is a 
+common pattern that is used to get or set these data form outside the objects
+by so called accessor and mutator methods (getSpeed, setSpeed).
 
 \subsubsection*{Exercise 13}
 \textit{Explain the relation between a constructor and the state of an 
 	onject.}\\
 
+	The constructor is creating (initializing) an object and has nothing
+	to do with the state of the object once it's set up.
+
 \subsubsection*{Exercise 14}
 \textit{How do we name constructors?}\\
+
+Constructors are usually named after the class their used for.
 
 \subsubsection*{Exercise 15}
 \textit{How long are the variables of an object alive (reachable)?}\\
 
+The lifetime of variables is coupled to the lifetime of their objects.
+As long as the object is alive the variables are also alive.
+
 \subsubsection*{Exercise 16}
 \textit{Why sould you (if possible) initialise instance variables explicit?}\\
+
+If we don't initialize variables explicit the compiler will use default values
+for the initialization. By explicit initialisation we don't have any 
+disadwantage and it serves well to document what is sctually happening.
 
 \subsubsection*{Exercise 17}
 \textit{What's the defualt value which is given to a \lstinline{int} variavle
 	by its initialisation?}\\
 
+The default value for an \lstinline{int} is zero.
+
 \subsubsection*{Exercise 19}
 \textit{What's the use of parameters?}\\
+
+Parameters provide additional information to a method or object. This is
+useful in many ways.
 
 \subsubsection*{Exercise 20}
 \textit{What's the difference between a formal and a actual parameter?}\\
 
+A formal parameter is a parameter that is defined as parameter but has no 
+actual value corresponding. A actual parameter is a parameter with a 
+specific value.
+
+\subsubsection*{Exercise 21}
+\textit{Is the following statement correct; "formal parameters are special
+	variables"?}\\
+
+Parameters are temporary and restricted variables because their space is
+allocated by a call to the method or object and as soon as a value is 
+transmitted to it. Once that call has completed its task, the formal
+parameter disappears and the values in it are lost.
+
+\subsubsection*{Exercise 22}
+\textit{What's about the accessability of formal parameters?}\\
+
+The accessability of parameters are limited to the lifetime of the task
+which is creating them (method).
+
+\subsubsection*{Exercise 23}
+\textit{In which way this differs from instance variables?}\\
+
+Instance variables have a lifetime that is identical with the lifetime of
+their objects.
+
+\subsubsection*{Exercise 24}
+\textit{How do the lifecycles of formal parameters and instance variables 
+	differ?}\\
+
+Instance variables are persistent (limited by lifetime of the object) and
+the lifetime of formal parameters is limited by a call (method).
+
+\subsubsection*{Exercise 26}
+\textit{How would you translate the expressions "assignment" and 
+	"expression" in german?}\\
+
+\begin{itemize}
+	\item assignment $=$ Zuweisung
+	\item expression $=$ Ausdruck
+\end{itemize}
+
+\subsubsection*{Exercise 27}
+\textit{How does an assignment-instruction work exactly? What's about to 
+	be aware of in relation to data types?}\\
+
+An assignment can be done with the operator \lstinline{=}. For example:
+\begin{lstlisting}
+// create a instance variable for speed
+private int speed;
+
+// set the speed
+public void setSpeed(int newSpeed)
+{
+	speed = newSpeed;
+}
+\end{lstlisting}
+By assigning data
+you have to be aware of data types. For example you can't assign a 
+\lstinline{int} to a \lstinline{float} and so on. There are some strategies
+to "cast" or "parse" data between different data types but that's not our 
+topic now.
 
 \subsection{Summary exercises}
 
