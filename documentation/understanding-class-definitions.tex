@@ -88,7 +88,7 @@ persistent data storage (limited by the lifetime of the object).
 
 \begin{itemize}
 	\item member variable
-	\item attibute
+	\item attribute
 	\item filed
 	\item variable
 \end{itemize}
@@ -128,9 +128,10 @@ private void getSpeed()
 \textit{With which access-modification do you declare instance variables
 	usually? Is it \lstinline{private} or \lstinline{public}? Do you
 	have a reason for your answer?}\\
+
 Usually we declare instance variables as private. The reason for this is a 
 common pattern that is used to get or set these data form outside the objects
-by so called accessor and mutator methods (getSpeed, setSpeed).
+by so called accessor and mutator methods (getSpeed, setSpeed, changeSpeed).
 
 \subsubsection*{Exercise 13}
 \textit{Explain the relation between a constructor and the state of an 
@@ -145,7 +146,8 @@ by so called accessor and mutator methods (getSpeed, setSpeed).
 Constructors are usually named after the class their used for.
 
 \subsubsection*{Exercise 15}
-\textit{How long are the variables of an object alive (reachable)?}\\
+\textit{What's the lifetyme of instance variables, how long are they
+	reachable/accessable?}\\
 
 The lifetime of variables is coupled to the lifetime of their objects.
 As long as the object is alive the variables are also alive.
@@ -189,20 +191,22 @@ parameter disappears and the values in it are lost.
 \textit{What's about the accessability of formal parameters?}\\
 
 The accessability of parameters are limited to the lifetime of the task
-which is creating them (method).
+which is creating them (method). Also parameter are only reachable from
+inside the box that they are used in (like a local variable).
 
 \subsubsection*{Exercise 23}
 \textit{In which way this differs from instance variables?}\\
 
 Instance variables have a lifetime that is identical with the lifetime of
-their objects.
+their objects. Also parameters are only reachable from inside the block,
+instance variables are reachable from everywhere inside the class.
 
 \subsubsection*{Exercise 24}
 \textit{How do the lifecycles of formal parameters and instance variables 
 	differ?}\\
 
 Instance variables are persistent (limited by lifetime of the object) and
-the lifetime of formal parameters is limited by a call (method).
+the lifetime of formal parameters is not really defined in runtime.
 
 \subsubsection*{Exercise 26}
 \textit{How would you translate the expressions "assignment" and 
@@ -217,7 +221,7 @@ the lifetime of formal parameters is limited by a call (method).
 \textit{How does an assignment-instruction work exactly? What's about to 
 	be aware of in relation to data types?}\\
 
-An assignment can be done with the operator \lstinline{=}. For example:
+An assignment can be done with the operator "\lstinline{=}". For example:
 \begin{lstlisting}
 // create a instance variable for speed
 private int speed;
@@ -233,6 +237,45 @@ you have to be aware of data types. For example you can't assign a
 \lstinline{int} to a \lstinline{float} and so on. There are some strategies
 to "cast" or "parse" data between different data types but that's not our 
 topic now.
+
+\newpage
+\subsection{Team Exercise 1-4}
+Create a Balloon-Class and create some objects and interact with them.
+\lstinputlisting{../workspace/balloon/src/flight/Balloon.java}
+\lstinputlisting{../workspace/balloon/src/flight/Main.java}
+
+\newpage
+\subsection{Team Exercise 5}
+You want to write records, so you have to write a class Book for this.
+This class shall have the following four attributes:
+\begin{itemize}
+	\item Title (String)
+	\item Author (String)
+	\item Price (float)
+	\item Year on buy (int)
+\end{itemize}
+
+\noindent
+The class shall also have two constructors.
+\begin{itemize}
+	\item Title and author are parameters. The books is not bought yet and
+		this is why the price is 0.0 and the "year of buy" is -1.
+	\item All attributes are initialized by parameters.
+\end{itemize}
+
+\noindent
+The class shall have the following methods.
+\begin{itemize}
+	\item Two methods to get the title and author.
+	\item A method to get and to set the year of buy.
+	\item A method to get and to set the price.
+\end{itemize}
+
+\lstinputlisting{../workspace/Book/src/library/Book.java}
+\lstinputlisting{../workspace/Book/src/library/Main.java}
+
+
+
 
 \subsection{Summary exercises}
 
