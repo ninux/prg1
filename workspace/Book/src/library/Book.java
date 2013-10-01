@@ -25,4 +25,46 @@ public class Book
 		year = newYear;
 	}
 	
+	public Book(String newTitle, String newAuthor)
+	{
+		title = newTitle;
+		author = newAuthor;
+		price = 0.0f;
+		year = -1;
+	}
+	
+	public String getTitle()
+	{
+		System.out.println("Title: " + title);
+		return title;
+	}
+	
+	public String getAuthor()
+	{
+		System.out.println("Author: " + author);
+		return author;
+	}
+	
+	public void setYear(int newYear)
+	{
+		year = newYear;
+	}
+	
+	public void setPrice(float newPrice)
+	{
+		price = newPrice;
+	}
+	
+	public int getYear()
+	{
+		System.out.println("Year: " + year);
+		return year;
+	}
+	
+	public float getPrice()
+	{
+		System.out.println("Price: " + price + " USD");
+		return price;
+	}
+	
 }
