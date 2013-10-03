@@ -27,7 +27,7 @@
 
 \subsubsection*{Exercise 13}
 \textit{Explain the relation between a constructor and the state of an 
-	onject.}\\
+	object.}\\
 
 \subsubsection*{Exercise 14}
 \textit{How do we name constructors?}\\
@@ -72,20 +72,20 @@
 
 \subsection{Exercises from book (chapter 2)}
 \subsubsection*{Exercise 2.1}
-\textit{Create a \verb?TicketMachine? object bench and take a look at its 
+\textit{Create a \lstinline{TicketMachine} object bench and take a look at its 
 methods. You should see the following: 
-\verb?get Balance, getPrice, insertMoney,? and \verb?ptintTicket?. Try out the 
-\verb?getPrice? method. You should see a return value containing the price of 
+\lstinline{get Balance, getPrice, insertMoney,} and \lstinline{printTicket}. Try out the 
+\lstinline{getPrice} method. You should see a return value containing the price of 
 the ticket thet was set when this object was created. Use the 
-\verb?insertMoney? method to simulate inserting an amount of money into the 
+\lstinline{insertMoney} method to simulate inserting an amount of money into the 
 machine. The machine stores as a balance the amount of money inserted. Use 
-\verb?getBalance? to check that the machine has kept an accurate record of the 
+\lstinline{getBalance} to check that the machine has kept an accurate record of the 
 amount just inserted. You can insert several seperate amounts of money into the 
 machine, just like you might insert multiple coins or bills into a real 
 machine. Try inserting the exact amount required for a ticket, and use 
-\verb?getBalance? to ensure that the balance is increased correctly. As this 
+\lstinline{getBalance} to ensure that the balance is increased correctly. As this 
 is a simple machine, a ticket will not be issued automatically, so once you 
-have inserted enough money, call the \verb?printTicket? method. A facsimile 
+have inserted enough money, call the \lstinline{printTicket} method. A facsimile 
 ticket should be printed in the BlueJ terminal window. }
 
 \subsubsection*{Exercise 2.2}
@@ -102,7 +102,7 @@ ticket? }
 \subsubsection*{Exercise 2.4}
 \textit{Try to obtain a good understanding of the ticket machine's behavior by 
 interacting with it on the object bench before we start looking, in the next 
-section, at how the \verb?TicketMachine? class is implemented. }
+section, at how the \lstinline{TicketMachine} class is implemented. }
 
 \subsubsection*{Exercise 2.5}
 \textit{Create another ticket machine for tickets of a different price; 
@@ -111,31 +111,31 @@ Buy a ticket from that machine. Does the printed ticket look any different
 from those printed by the first machine? }
 
 \subsubsection*{Exercise 2.6}
-\textit{Write out what you think the outer wrappers of the \verb?Student? and 
-\verb?LabClass? classes look like; do not worry about the inner part. }
+\textit{Write out what you think the outer wrappers of the \lstinline{Student} and 
+\lstinline{LabClass} classes look like; do not worry about the inner part. }
 
 \subsubsection*{Exercise 2.7}
-\textit{Does it matter whether we write \verb?public class TicketMachine? or 
-\verb?class public TicketMachine? in the outer wrapper of the class? Edit the 
-source of the \verb?TicketMachine? class to make the change, and then close 
+\textit{Does it matter whether we write \lstinline{public class TicketMachine} or 
+\lstinline{class public TicketMachine} in the outer wrapper of the class? Edit the 
+source of the \lstinline{TicketMachine} class to make the change, and then close 
 the editor window. Do you notice a change in the class diagram? }
 
 \subsubsection*{Exercise 2.8}
-\textit{Check whether or not it is possible to leave out the word \verb?public? 
-from the outer wrapper of the \verb?TicketMachine? class. }
+\textit{Check whether or not it is possible to leave out the word \lstinline{public} 
+from the outer wrapper of the \lstinline{TicketMachine} class. }
 
 \subsubsection*{Exercise 2.9}
-\textit{Put back the word \verb?public?, and then check whether it is possible 
-to leave out the word \verb?class? by trying to compile again. Make sure that 
+\textit{Put back the word \lstinline{public}, and then check whether it is possible 
+to leave out the word \lstinline{class} by trying to compile again. Make sure that 
 both words are put back as they were originally before continuing. }
 
 \subsubsection*{Exercise 2.10}
 \textit{From your earlier experimentation with the ticket machine objects 
 within BlueJ, you can probably remember the names of some of the methods-
-\verb?printTicket?, for instance. Look at the class definition in Code 2.1, 
+\lstinline{printTicket}, for instance. Look at the class definition in Code 2.1, 
 and use this knowledge, along with the additional information about ordering 
 we have given you, to make a list of the names of the fields, constructors and 
-methods in the \verb?TicketMachine? class. Hint: There is only one constructor 
+methods in the \lstinline{TicketMachine} class. Hint: There is only one constructor 
 in the class. }
 
 \subsubsection*{Exercise 2.11}
@@ -144,25 +144,25 @@ signifigantly different from the methods of the class? }
 
 \subsubsection*{Exercise 2.12}
 \textit{What do you think is the type of each of the following fields? \\
-\verb?private int count;?\\
-\verb?private Student representative;?\\
-\verb?private Game game;?}
+\lstinline{private int count;}\\
+\lstinline{private Student representative;}\\
+\lstinline{private Game game;}}
 
 \subsubsection*{Exercise 2.13}
 \textit{What are the names of the following fields? \\
-\verb?private boolean alive;?\\
-\verb?private Person tutor;?\\
-\verb?private Game game;?}
+\lstinline{private boolean alive;}\\
+\lstinline{private Person tutor;}\\
+\lstinline{private Game game;}}
 
 \subsubsection*{Exercise 2.14}
 \textit{From what you know about the naming conventions for classes, which of 
 the type names in Exercises 2.12 and 2.13 would you say are class names? }
 
 \subsubsection*{Exercise 2.15}
-\textit{In the following fiels declaration from the \verb?TicketMachine? class\\
-\verb?private int price;?\\
+\textit{In the following fiels declaration from the \lstinline{TicketMachine} class\\
+\lstinline{private int price;}\\
 does it matter which order the three words appear in? Edit the 
-\verb?TicketMachine? class to try different orderings. After each change, 
+\lstinline{TicketMachine} class to try different orderings. After each change, 
 close the editor. Does the appearance of the class diagram after each change 
 give you a clue as to whether or not other orderings are possible? Check by 
 pressing the Compile button to see if there is an error message. }
@@ -173,94 +173,94 @@ declaration? Once again, expreiment via the editor. The rule you will learn
 here is an important one, so be sure to remember it. }
 
 \subsubsection*{Exercise 2.17}
-\textit{Write in full the declaration for a field of type \verb?int? whose 
-name is \verb?status?. }
+\textit{Write in full the declaration for a field of type \lstinline{int} whose 
+name is \lstinline{status}. }
 
 \subsubsection*{Exercise 2.18}
 \textit{To what class does the following constructor belong? \\
-\verb?public Student(String name)?}
+\lstinline{public Student(String name)}}
 
 \subsubsection*{Exercise 2.19}
 \textit{How many parameters does the following constructor have, and what are 
 their types? \\
-\verb?public Book(String title, double, price)?}
+\lstinline{public Book(String title, double, price)}}
 
 \subsubsection*{Exercise 2.20}
-\textit{Can you guess what types some of the \verb?Book? class's fields might 
+\textit{Can you guess what types some of the \lstinline{Book} class's fields might 
 be, from the parameters in its constructor? Can you assume anything about the 
 names of the fields? }
 
 \subsubsection*{Exercise 2.21}
-\textit{Suppose that the class \verb?Pet? has a field called \verb?name? that 
-is of type \verb?String?. Write an assignment in the body of the following 
-constructor so that the \verb?name? field will be initialized with the value 
+\textit{Suppose that the class \lstinline{Pet} has a field called \lstinline{name} that 
+is of type \lstinline{String}. Write an assignment in the body of the following 
+constructor so that the \lstinline{name} field will be initialized with the value 
 of the constructor's parameter. \\
-\verb?public Pet(String petsName)
-{
-}?}
+\lstinline{public Pet(String petsName)}\\
+\lstinline!\{!\\
+\lstinline!\}!}
 
 \subsubsection*{Exercise 2.22}
 \textit{Challange exercise The following object creation will result in the 
-constructor of the \verb?Date? class being called. Can you write the 
+constructor of the \lstinline{Date} class being called. Can you write the 
 constructor's header? \\
-\verb?new Date("March", 23, 1861)?\\
+\lstinline{new Date("March", 23, 1861)}\\
 Try give meaningful names to the parameters. }
 
 \subsubsection*{Exercise 2.23}
-\textit{Compare the header and body of the \verb?getBalance? method with the 
-header and body of the \verb?getPrice? method. What are the differences 
+\textit{Compare the header and body of the \lstinline?getBalance? method with the 
+header and body of the \lstinline?getPrice? method. What are the differences 
 between them? }
 
 \subsubsection*{Exercise 2.24}
-\textit{If a call to \verb?getPrice? can be characterized as 
+\textit{If a call to \lstinline?getPrice? can be characterized as 
 "'What do ticketscost?"' how would you characterize a call to 
-\verb?getBalance?? }
+\lstinline?getBalance?? }
 
 \subsubsection*{Exercise 2.25}
-\textit{If the name of \verb?getBalance? is changed to \verb?getAmount?, does 
+\textit{If the name of \lstinline?getBalance? is changed to \lstinline?getAmount?, does 
 the return statement in the body of the method also need to be changed for the 
 code to compile? Try it out with BlueJ. What does this tell you about the name 
 of an accessor method and the nema of the field associated with it? }
 
 \subsubsection*{Exercise 2.26}
-\textit{Write an accessor method \verb?getTotal? in the \verb?TickatMachine? 
-class. The new method should return the value of the \verb?total? field. }
+\textit{Write an accessor method \lstinline?getTotal? in the \lstinline?TickatMachine? 
+class. The new method should return the value of the \lstinline?total? field. }
 
 \subsubsection*{Exercise 2.27}
-\textit{Try removing the return statement from the body of \verb?getPrice?. 
+\textit{Try removing the return statement from the body of \lstinline?getPrice?. 
 What error message do you see now when you try compiling the class? }
 
 \subsubsection*{Exercise 2.28}
-\textit{Compare the method headers of \verb?getPrice? and \verb?printTicket? in 
+\textit{Compare the method headers of \lstinline?getPrice? and \lstinline?printTicket? in 
 Code 2.1. Apart from their names, what is the main difference between them? }
 
 \subsubsection*{Exercise 2.29}
-\textit{Do the \verb?insertMoney? and \verb?printTicket? methods have return 
+\textit{Do the \lstinline?insertMoney? and \lstinline?printTicket? methods have return 
 statements? Why do you think this might be? Do you notice anything about their 
 headers that might suggest why they do not require return statements? }
 
 \subsubsection*{Exercise 2.30}
 \textit{Create a ticket machine with a ticket price of your choosing. Before 
-doing anything else, call the \verb?getBalance? method on it. Now call the 
-\verb?insertMoney? method(Code2.6) and give an non-zero positive amount of 
-money as the actual parameter. Now call \verb?getBalance? again. The two calls 
-to \verb?getBalance? should show different outputs, because the call to 
-\verb?insertMoney? had the effect of changing the machine's state via its 
-\verb?balance? field. }
+doing anything else, call the \lstinline?getBalance? method on it. Now call the 
+\lstinline?insertMoney? method(Code2.6) and give an non-zero positive amount of 
+money as the actual parameter. Now call \lstinline?getBalance? again. The two calls 
+to \lstinline?getBalance? should show different outputs, because the call to 
+\lstinline?insertMoney? had the effect of changing the machine's state via its 
+\lstinline?balance? field. }
 
 \subsubsection*{Exercise 2.31}
-\textit{How can we tell from just its header that \verb?setPrice? is a method 
+\textit{How can we tell from just its header that \lstinline?setPrice? is a method 
 and not a constructor? \\
-\verb?public void setPrice(int cost)?}
+\lstinline?public void setPrice(int cost)?}
 
 \subsubsection*{Exercise 2.32}
-\textit{Complete the body of the \verb?setPrice? method so that it assigns the 
-value of its parameter to the \verb?price? field. }
+\textit{Complete the body of the \lstinline?setPrice? method so that it assigns the 
+value of its parameter to the \lstinline?price? field. }
 
 \subsubsection*{Exercise 2.33}
 \textit{Complete the body of the following method, whose purpose is to add the 
-value of its parameter to a field named \verb?score?. \\
-\verb?/**
+value of its parameter to a field named \lstinline?score?. \\
+\lstinline?/**
  * Increase score by the given number of points. 
  */
 public void increase(int points)
@@ -274,8 +274,8 @@ this? }
 
 \subsubsection*{Exercise 2.35}
 \textit{Complete the following method, whose purpose is to subtract the value 
-of its parameter from a field named \verb?price?. \\
-\verb?/**
+of its parameter from a field named \lstinline?price?. \\
+\lstinline?/**
  * Reduce price by the given amount. 
  */
 public void discount(int amount)
@@ -285,41 +285,41 @@ public void discount(int amount)
 
 \subsubsection*{Exercise 2.36}
 \textit{Write down exactly what will be printed by the following statement: \\
-\verb?System.out.println("My cat has green eyes.");?}
+\lstinline?System.out.println("My cat has green eyes.");?}
 
 \subsubsection*{Exercise 2.37}
-\textit{Add a method called \verb?prompt? to the \verb?TicketMachine? class. 
+\textit{Add a method called \lstinline?prompt? to the \lstinline?TicketMachine? class. 
 This should have a void return type and take no parameters. The body of the 
 method should print the following single line of outpur: \\
-\verb?Please insert the correct amount of money. ?}
+\lstinline?Please insert the correct amount of money. ?}
 
 \subsubsection*{Exercise 2.38}
 \textit{What do you think would be printed if you altered the fourth statement 
-of \verb?printTicket? so that \verb?price? also has quotes around it, as 
+of \lstinline?printTicket? so that \lstinline?price? also has quotes around it, as 
 follows? \\
-\verb?System.out.println("# " + "price" + " cents.");?}
+\lstinline?System.out.println("\# " + "price" + " cents.");?}
 
 \subsubsection*{Exercise 2.39}
 \textit{What about the following version? \\
-\verb?SSystem.out.println("# price cents.");?}
+\lstinline?SSystem.out.println("\# price cents.");?}
 
 \subsubsection*{Exercise 2.40}
 \textit{Could either of the previous two versions be used to show the price of 
 tickets in different ticket machines? Explain your answer. }
 
 \subsubsection*{Exercise 2.41}
-\textit{Add a \verb?showPrice? method to the \verb?TicketMachine? class. This 
+\textit{Add a \lstinline?showPrice? method to the \lstinline?TicketMachine? class. This 
 should have a void return type and take no parameters. The body of the method 
 should print: \\
-\verb?The price of a ticket is xyz cents- ?}
+\lstinline?The price of a ticket is xyz cents- ?}
 
 \subsubsection*{Exercise 2.42}
 \textit{Create two ticket machines with differently priced tickets. Do calls 
-to their \verb?showPrice? methods show the same output, or different? How do 
+to their \lstinline?showPrice? methods show the same output, or different? How do 
 you explain this effect? }
 
 \subsubsection*{Exercise 2.43}
-\textit{Modify the constructor of \verb?TicketMachine? so that it no longer 
+\textit{Modify the constructor of \lstinline?TicketMachine? so that it no longer 
 has a parameter. Instead, the price of tickets should be fixed at 1,000 cents. 
 What effect does this have when you construct ticket.machine objects within 
 BlueJ? }
@@ -331,26 +331,26 @@ price to be a default value of your choosing. Test your implementation by
 creating machines via two different constructors. }
 
 \subsubsection*{Exercise 2.45}
-\textit{Implement a method, \verb?empty?, that simulates the effect of 
+\textit{Implement a method, \lstinline?empty?, that simulates the effect of 
 removing all money from the machine. This method should have a void return 
-type, and its body should simply set the \verb?total? field to zero. Does 
+type, and its body should simply set the \lstinline?total? field to zero. Does 
 this method need to take any parameters? Test your method by reating a 
 machine, inserting some moneym printing some tickets, checking the total, and 
-then emptying the machine. Is the \verb?empty? method a mutator or an 
+then emptying the machine. Is the \lstinline?empty? method a mutator or an 
 accessor? }
 
 \subsubsection*{Exercise 2.46}
 \textit{Check that the behavior discussed here is accurate by creating a 
-\verb?TicketMachine? instance and calling \verb?insertMoney? with various 
+\lstinline?TicketMachine? instance and calling \lstinline?insertMoney? with various 
 actual parameter values. Check the balance both before and after calling 
-\verb?insertMoney?. Does the balance ever change in the cases when an error 
+\lstinline?insertMoney?. Does the balance ever change in the cases when an error 
 message is printed? Try to predict what will happen if you enter the value 
 zero as the parameter, and then see if you are right. }
 
 \subsubsection*{Exercise 2.47}
 \textit{Predict what you think will happen if you change the test in 
-\verb?insertMoney? to use the greater-than or equal-to operator: \\
-\verb?if(amount >= 0)?\\
+\lstinline?insertMoney? to use the greater-than or equal-to operator: \\
+\lstinline?if(amount >= 0)?\\
 Check your predictions by running some tests. What difference does it make to 
 the behavior of the method? }
 
@@ -362,7 +362,7 @@ happen this way arround. }
 
 \subsubsection*{Exercise 2.49}
 \textit{In the figures project we looked at in Chapter 1 we used a 
-\verb?boolean? field to control a feature of the circle objects. What was that 
+\lstinline?boolean? field to control a feature of the circle objects. What was that 
 feature? Was it well suited to being controlled by a type with only two 
 different values? }
 
