@@ -285,11 +285,23 @@ the message "'Just right"'. }
 includes the value of your budget if the price is too high. }
 
 \subsubsection*{Exercise 2.58}
-\textit{Why does the following version of \lstinline{refundBalance} not give the same results as the original? \\
+\textit{Why does the following version of \lstinline{refundBalance} not give 
+the same results as the original? \\
 \lstinline{public int refundBalance()}\\
 \lstinline{\{}\\
 \lstinline{	balance = 0;}\\
 \lstinline{	return balance;}\\
 \lstinline{\}}\\
 What tests can you run to demonstrate that it does not? }
+
+\subsubsection*{Exercise 2.59}
+\textit{What happens if you try to compile the \lstinline{TicketMachine} class 
+with the following version of \lstinline{refundBalance}? \\
+\lstinline{public int refundBalance()}\\
+\lstinline{\{}\\
+\lstinline{	return balance;}\\
+\lstinline{	balance = 0;}\\
+\lstinline{\}}\\
+What do you know about return statements that helps to explain why this 
+version does not compile? }
 
