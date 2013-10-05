@@ -80,39 +80,39 @@
 \subsubsection*{Exercise 2.23}
 \textit{Compare the header and body of the \lstinline?getBalance? method with 
 the header and body of the \lstinline?getPrice? method. What are the 
-differences between them? }
+differences between them? }\\
 
 \subsubsection*{Exercise 2.24}
 \textit{If a call to \lstinline?getPrice? can be characterized as 
 "'What do ticketscost?"' how would you characterize a call to 
-\lstinline?getBalance?? }
+\lstinline?getBalance?? }\\
 
 \subsubsection*{Exercise 2.25}
 \textit{If the name of \lstinline?getBalance? is changed to 
 \lstinline?getAmount?, does the return statement in the body of the method 
 also need to be changed for the code to compile? Try it out with BlueJ. What 
 does this tell you about the name of an accessor method and the nema of the 
-field associated with it? }
+field associated with it? }\\
 
 \subsubsection*{Exercise 2.26}
 \textit{Write an accessor method \lstinline?getTotal? in the 
 \lstinline?TickatMachine? class. The new method should return the value of the 
-\lstinline?total? field. }
+\lstinline?total? field. }\\
 
 \subsubsection*{Exercise 2.27}
 \textit{Try removing the return statement from the body of 
 \lstinline?getPrice?. What error message do you see now when you try compiling 
-the class? }
+the class? }\\
 
 \subsubsection*{Exercise 2.28}
 \textit{Compare the method headers of \lstinline?getPrice? and 
 \lstinline?printTicket? in Code 2.1. Apart from their names, what is the main 
-difference between them? }
+difference between them? }\\
 
 \subsubsection*{Exercise 2.29}
 \textit{Do the \lstinline?insertMoney? and \lstinline?printTicket? methods have 
 return statements? Why do you think this might be? Do you notice anything about 
-their headers that might suggest why they do not require return statements? }
+their headers that might suggest why they do not require return statements? }\\
 
 \subsubsection*{Exercise 2.30}
 \textit{Create a ticket machine with a ticket price of your choosing. Before 
@@ -121,16 +121,16 @@ doing anything else, call the \lstinline?getBalance? method on it. Now call the
 money as the actual parameter. Now call \lstinline?getBalance? again. The two 
 calls to \lstinline?getBalance? should show different outputs, because the call 
 to \lstinline?insertMoney? had the effect of changing the machine's state via 
-its \lstinline?balance? field. }
+its \lstinline?balance? field. }\\
 
 \subsubsection*{Exercise 2.31}
 \textit{How can we tell from just its header that \lstinline?setPrice? is a 
 method and not a constructor? \\
-\lstinline?public void setPrice(int cost)?}
+\lstinline?public void setPrice(int cost)?}\\
 
 \subsubsection*{Exercise 2.32}
 \textit{Complete the body of the \lstinline?setPrice? method so that it 
-assigns the value of its parameter to the \lstinline?price? field. }
+assigns the value of its parameter to the \lstinline?price? field. }\\
 
 \subsubsection*{Exercise 2.33}
 \textit{Complete the body of the following method, whose purpose is to add the 
@@ -141,11 +141,11 @@ value of its parameter to a field named \lstinline?score?. \\
 public void increase(int points)
 {
     ...
-}?}
+}?}\\
 
 \subsubsection*{Exercise 2.34}
 \textit{Is the increase method a mutator? If so, how could you demonstrate 
-this? }
+this? }\\
 
 \subsubsection*{Exercise 2.35}
 \textit{Complete the following method, whose purpose is to subtract the value 
@@ -156,54 +156,54 @@ of its parameter from a field named \lstinline?price?. \\
 public void discount(int amount)
 {
     ...
-}?}
+}?}\\
 
 \subsubsection*{Exercise 2.36}
 \textit{Write down exactly what will be printed by the following statement: \\
-\lstinline?System.out.println("My cat has green eyes.");?}
+\lstinline?System.out.println("My cat has green eyes.");?}\\
 
 \subsubsection*{Exercise 2.37}
 \textit{Add a method called \lstinline?prompt? to the \lstinline?TicketMachine? 
 class. This should have a void return type and take no parameters. The body of 
 the method should print the following single line of output: \\
-\lstinline?Please insert the correct amount of money. ?}
+\lstinline?Please insert the correct amount of money. ?}\\
 
 \subsubsection*{Exercise 2.38}
 \textit{What do you think would be printed if you altered the fourth statement 
 of \lstinline?printTicket? so that \lstinline?price? also has quotes around it, 
 as follows? \\
-\lstinline?System.out.println("\# " + "price" + " cents.");?}
+\lstinline?System.out.println("\# " + "price" + " cents.");?}\\
 
 \subsubsection*{Exercise 2.39}
 \textit{What about the following version? \\
-\lstinline?SSystem.out.println("\# price cents.");?}
+\lstinline?SSystem.out.println("\# price cents.");?}\\
 
 \subsubsection*{Exercise 2.40}
 \textit{Could either of the previous two versions be used to show the price of 
-tickets in different ticket machines? Explain your answer. }
+tickets in different ticket machines? Explain your answer. }\\
 
 \subsubsection*{Exercise 2.41}
 \textit{Add a \lstinline?showPrice? method to the \lstinline?TicketMachine? 
 class. This should have a void return type and take no parameters. The body of 
 the method should print: \\
-\lstinline?The price of a ticket is xyz cents- ?}
+\lstinline?The price of a ticket is xyz cents- ?}\\
 
 \subsubsection*{Exercise 2.42}
 \textit{Create two ticket machines with differently priced tickets. Do calls 
 to their \lstinline?showPrice? methods show the same output, or different? How 
-do you explain this effect? }
+do you explain this effect? }\\
 
 \subsubsection*{Exercise 2.43}
 \textit{Modify the constructor of \lstinline?TicketMachine? so that it no 
 longer has a parameter. Instead, the price of tickets should be fixed at 1,000 
 cents. What effect does this have when you construct ticket.machine objects 
-within BlueJ? }
+within BlueJ? }\\
 
 \subsubsection*{Exercise 2.44}
 \textit{Give the class two constructors. One should take a single parameter 
 that specifies the price, and the other should take no parameter and set the 
 price to be a default value of your choosing. Test your implementation by 
-creating machines via two different constructors. }
+creating machines via two different constructors. }\\
 
 \subsubsection*{Exercise 2.45}
 \textit{Implement a method, \lstinline?empty?, that simulates the effect of 
@@ -212,7 +212,7 @@ type, and its body should simply set the \lstinline?total? field to zero. Does
 this method need to take any parameters? Test your method by reating a 
 machine, inserting some moneym printing some tickets, checking the total, and 
 then emptying the machine. Is the \lstinline?empty? method a mutator or an 
-accessor? }
+accessor? }\\
 
 \subsubsection*{Exercise 2.46}
 \textit{Check that the behavior discussed here is accurate by creating a 
@@ -220,69 +220,69 @@ accessor? }
 various actual parameter values. Check the balance both before and after 
 calling \lstinline?insertMoney?. Does the balance ever change in the cases 
 when an error message is printed? Try to predict what will happen if you enter 
-the value zero as the parameter, and then see if you are right. }
+the value zero as the parameter, and then see if you are right. }\\
 
 \subsubsection*{Exercise 2.47}
 \textit{Predict what you think will happen if you change the test in 
 \lstinline?insertMoney? to use the greater-than or equal-to operator: \\
 \lstinline?if(amount >= 0)?\\
 Check your predictions by running some tests. What difference does it make to 
-the behavior of the method? }
+the behavior of the method? }\\
 
 \subsubsection*{Exercise 2.48}
 \textit{Rewrite the if-else statement so that the error message is printed if 
 the boolean expression is true but the balance is increased if the expression 
 is false. You will obviously have to rewrite the condition to make things 
-happen this way arround. }
+happen this way arround. }\\
 
 \subsubsection*{Exercise 2.49}
 \textit{In the figures project we looked at in Chapter 1 we used a 
 \lstinline?boolean? field to control a feature of the circle objects. What was 
 that feature? Was it well suited to being controlled by a type with only two 
-different values? }
+different values? }\\
 
 \subsubsection*{Exercise 2.50}
 \textit{In this version of \lstinline{printTicket}, we also do something 
 slightly different with the \lstinline{total} and \lstinline{balance} fields. 
 Compare the implementation of the method in Code 2.1 with that in Code 2.8 to 
 see whether you can tell what those differences are. Then check your 
-understanding by experimenting within BlueJ. }
+understanding by experimenting within BlueJ. }\\
 
 \subsubsection*{Exercise 2.51}
 \textit{Is it possible to remove the else part of the statement in the 
 \lstinline{printTicket} method (i.e., remove the word \lstinline{else} and the 
 block attached to it)? Try doing this and seeing if the code still compiles. 
-What happens now if you try to print a ticket without inserting any money? }
+What happens now if you try to print a ticket without inserting any money? }\\
 
 \subsubsection*{Exercise 2.52}
 \textit{After a ticket has been printed, could the value in the 
 \lstinline{balance} field ever be set to a negative value by subtracting 
-\lstinline{price} from it? Justify your answer. }
+\lstinline{price} from it? Justify your answer. }\\
 
 \subsubsection*{Exercise 2.53}
 \textit{So far, we have introduced you to two arithmetic operators, + and -, 
 that can be used in \textbf{arithmetic expressions} in Java. Take a look at 
-Appendix C to find out what other operators are available. }
+Appendix C to find out what other operators are available. }\\
 
 \subsubsection*{Exercise 2.54}
 \textit{Write an assignment statement that will store the result of 
 multiplying two variables, \lstinline{price} and \lstinline{discount}, into a 
-third variable, \lstinline{saving}}
+third variable, \lstinline{saving}}\\
 
 \subsubsection*{Exercise 2.55}
 \textit{Write an assignment statement that will divide the value in 
 \lstinline{total} by the value in \lstinline{count} and store the result in 
-\lstinline{mean}. }
+\lstinline{mean}. }\\
 
 \subsubsection*{Exercise 2.56}
 \textit{Write an if statement that will compare the value in \lstinline{price} 
 against the value in \lstinline{budget}. If lstinline{price} is greater than 
 \lstinline{budget}, then print the message "'Too expensive"'; otherwise print 
-the message "'Just right"'. }
+the message "'Just right"'. }\\
 
 \subsubsection*{Exercise 2.57}
 \textit{Modify your answer to the previous exercise so that the message 
-includes the value of your budget if the price is too high. }
+includes the value of your budget if the price is too high. }\\
 
 \subsubsection*{Exercise 2.58}
 \textit{Why does the following version of \lstinline{refundBalance} not give 
@@ -292,7 +292,7 @@ the same results as the original? \\
 \lstinline{	balance = 0;}\\
 \lstinline{	return balance;}\\
 \lstinline{\}}\\
-What tests can you run to demonstrate that it does not? }
+What tests can you run to demonstrate that it does not? }\\
 
 \subsubsection*{Exercise 2.59}
 \textit{What happens if you try to compile the \lstinline{TicketMachine} class 
@@ -303,7 +303,7 @@ with the following version of \lstinline{refundBalance}? \\
 \lstinline{	balance = 0;}\\
 \lstinline{\}}\\
 What do you know about return statements that helps to explain why this 
-version does not compile? }
+version does not compile? }\\
 
 \subsubsection*{Exercise 2.60}
 \textit{What is wrong with the following version of the constructor of 
@@ -313,17 +313,17 @@ version does not compile? }
 \lstinline{	int price = cost;}\\
 \lstinline{	balance = 0;}\\
 \lstinline{	total = 0;}\\
-\lstinline{\}}
+\lstinline{\}}\\
 Try out this version in the better-ticket-machine project. Does this version 
 compile? Create an object and then inspect its fields. Do you notice something 
 wrong about the value of the price field in the inspector with this version? 
-Can you explain why this? }
+Can you explain why this? }\\
 
 \subsubsection*{Exercise 2.61}
 \textit{Add a new method, \lstinline{emptyMachine}, that is designed to 
 simulate emptying the machine of money. It should reset \lstinline{total} to 
 be zero but also return the value that was stored in \lstinline{total} before 
-it was reset. }
+it was reset. }\\
 
 \subsubsection*{Exercise 2.62}
 \textit{Rewrite the \lstinline{printTicket} method so that it declares a local 
@@ -335,7 +335,7 @@ ticket should be printed; otherwise, an error message should be printed
 stating the amount left to pay. Test yout version to ensure that it behaves in 
 exactly the same way as the original version. Make sure that you call the 
 method more than once, when the machine is in diferent states, so that both 
-parts of the conditional statement will be executed on separate occassions. }
+parts of the conditional statement will be executed on separate occassions. }\\
 
 \subsubsection*{Exercise 2.63}
 \textit{Challange exercise Suppose we wished a single \lstinline{TicketMachine} 
@@ -346,4 +346,19 @@ price. What further mathode and/or fields would need to be added to
 that many of the existing methods would need to be changed as well? \\
 Save the better-ticket-machine project under a new name, and implement your 
 changes in the new project. }
+
+\subsubsection*{Exercise 2.64}
+\textit{List the name and return type of this method: \\
+\lstinline{public String getCode()}\\
+\lstinline{\{}
+\lstinline{	return code;}\\
+\lstinline{\}}
+}
+
+\subsubsection*{Exercise 2.65}
+\textit{List the name of this method and the name and type of its parameter: \\
+\lstinline{public void setCredits(int creditValue)}\\
+\lstinline{\{}\\
+\lstinline{	return code;}\\
+\lstinline{\{}}\\
 
