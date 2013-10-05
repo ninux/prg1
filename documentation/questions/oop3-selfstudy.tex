@@ -433,3 +433,26 @@ the following actual parameter values: \\
 \lstinline{"859012"}. What happens when \lstinline{getLoginName} is called in 
 this student? Why do you think this is? }\\
 
+\subsubsection*{Exercise 2.77}
+\textit{The \lstinline{String} class defines a \lstinline{length} accessor 
+with the following header: \\
+\lstinline{/**}\\
+\lstinline{ * Return the number of characters in this string. }\\
+\lstinline{ */}\\
+\lstinline{public int length()}\\
+so the following is an example of its use with the \lstinline{String} variable 
+\lstinline{fullName}: \\
+\lstinline{fullName.length()}\\
+Add conditional statements to the constructor of \lstinline{Student} to print 
+an error message if either the length of the \lstinline{fullName} parameter is 
+less than four characters or the length of the \lstinline{studentId} parameter 
+is less than three characters. However, the constructor should still use those 
+parameters to set the \lstinline{name} and \lstinline{id} fields, even if the 
+error message is printed. Hint: Use if statements of the following form (that 
+is, having no \lstinline{else} part) to print the error messages. \\
+\lstinline{if(perform a test on one of the following parameters) \{}\\
+\lstinline{	print an error message if the test gave a true result}\\
+\lstinline{\}}\\
+See Appendix D for further details of the different types of if statements, if necessary. 
+}\\
+
