@@ -319,3 +319,29 @@ compile? Create an object and then inspect its fields. Do you notice something
 wrong about the value of the price field in the inspector with this version? 
 Can you explain why this? }
 
+\subsubsection*{Exercise 2.61}
+\textit{Add a new method, \lstinline{emptyMachine}, that is designed to 
+simulate emptying the machine of money. It should reset \lstinline{total} to 
+be zero but also return the value that was stored in \lstinline{total} before 
+it was reset. }
+
+\subsubsection*{Exercise 2.62}
+\textit{Rewrite the \lstinline{printTicket} method so that it declares a local 
+variable, \lstinline{amountLeftToPay}. This should then be initialized to 
+contain the difference between \lstinline{price} and \lstinline{balance}. 
+Rewrite the test in the conditional statement to check the value of 
+\lstinline{amountLeftToPay}. If its value is less than or equal to zero, a 
+ticket should be printed; otherwise, an error message should be printed 
+stating the amount left to pay. Test yout version to ensure that it behaves in 
+exactly the same way as the original version. Make sure that you call the 
+method more than once, when the machine is in diferent states, so that both 
+parts of the conditional statement will be executed on separate occassions. }
+
+\subsubsection*{Exercise 2.63}
+\textit{Challange exercise Suppose we wished a single \lstinline{TicketMachine} 
+object to be able to issue tickets of different prices. For instance, users 
+might press a button on the physical machine to select a discounted ticket 
+price. What further mathode and/or fields would need to be added to 
+\lstinline{TickeMachine} to allow this kind of functionality? Do you think 
+that many of the existing methods would need to be changed as well? }
+
