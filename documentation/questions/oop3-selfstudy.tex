@@ -588,5 +588,17 @@ instead. Hint: Use a conditional statement whose test calls the
 \lstinline{length} method in the \lstinline{refNumber} string. }\\
 
 \subsubsection*{Exercise 2.89}
-\textit{Modify your \lstinline{setRefNumber} mutator so that it sets the \lstinline{refNumber} field only if the parameter is a string of al least three characters. If it is less than three, then print an error message and leave the field unchanged. }\\
+\textit{Modify your \lstinline{setRefNumber} mutator so that it sets the 
+\lstinline{refNumber} field only if the parameter is a string of al least 
+three characters. If it is less than three, then print an error message and 
+leave the field unchanged. }\\
+
+\subsubsection*{Exercise 2.90}
+\textit{Add a further integer field, \lstinline{borrowed}, to the 
+\lstinline{Book} class. This keeps a count of the number of times a book has 
+been borrowed. Add a mutator, \lstinline{borrow}, to the class. This should 
+update the field by 1 each time it is called. Include an accessor, 
+\lstinline{getBorrowed}, that returns the value of this new field as its 
+result. Modify \lstinline{printDetails} so that it includes the value of this 
+field with an explanatory piece of text. }\\
 
