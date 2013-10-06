@@ -622,3 +622,22 @@ whose effect is to increase or decrease the value of temperature by
 5.0$^\circ$ respectively. Define an accessor method to return the value of 
 \lstinline{temperature}. }\\
 
+\subsubsection*{Exercise 2.93}
+\textit{Challenge exercise Modify your \lstinline{Heater} class to define three 
+new double-precision floating point fields: \lstinline{min}, \lstinline{max} 
+and \lstinline{increment}. The values of \lstinline{min} and \lstinline{max} 
+should be set by parameters passed to the contructor. The Value of 
+\lstinline{increment} should be set to 5.0 in the constructor. Modify the 
+definitions of \lstinline{warmer} and \lstinline{cooler} so that they use the 
+value of \lstinline{increment} rather than an explict value of 5.0. Before 
+proceeding further with this exercise, check that everything works as before. \\
+Now modify the \lstinline{warmer} method so that it will not allow the 
+temperature to be set to a value greater than \lstinline{max}. Similarly modify 
+\lstinline{cooler} so that it will not allow \lstinline{cooler} to be set to a 
+value less than \lstinline{min}. Check that the class works properly. Now add a 
+method, \lstinline{setIncrement}. Once again, test that the class works as you 
+would expect it to by creating some \lstinline{Heater} objects within BlueJ. Do 
+things still work as expected if a negative value is passed to the 
+\lstinline{setIncrement} method? Add a check to this method to prevent a 
+negative value from being assigned to \lstinline{increment}. }\\
+
