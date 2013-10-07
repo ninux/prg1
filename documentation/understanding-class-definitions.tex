@@ -432,6 +432,54 @@ From where can you access them?
 		Of course you can, just as for getter-methods.
 \end{itemize}
 
+\subsection{Team Exercise 3}
+At the exercises 2.27 and 2.59 you had to note error messages.
+\begin{itemize}
+	\item \textit{Compare your Notes} \\
+		"Missing return statement" and "unreachable statment".
+	\item \textit{Try to define rules out of these error messages.} \\
+		If you use a return declaration in the header you have to
+		use a return expression and the return expression has to
+		be at the end of the block.
+\end{itemize}
+
+\subsection{Team Exercise 4}
+Now you'll get into the \lstinline{switch} expression on your own.
+You can use the appendix D of your book and the file 
+\verb!Selection.jar! from ILIAS
+
+\subsubsection{Team Exercise 4.1}
+Look at the following snippet.
+\begin{lstlisting}
+public void output(int value)
+{
+	System.out.println();
+	System.out.println("actual parameter: " + value);
+	switch(value)
+	{
+		case 1:
+			System.out.println("one");
+			break;
+		case 2:
+			System.out.println("two");
+			break;
+		case 3: 
+			System.out.println("three");
+			break;
+		default:
+			System.out.println("other value");
+			break;
+	}
+}
+\end{lstlisting}
+
+\subsubsection{Team Exercise 4.2}
+\lstinputlisting{../workspace/Selection/src/choose/Selection.java}
+\lstinputlisting{../workspace/Selection/src/choose/Main.java}
+
+\subsubsection{Team Exercise 4.3}
+\subsubsection{Team Exercise 4.4}
+\subsubsection{Team Exercise 4.5}
 
 \subsection{Summary exercises}
 
