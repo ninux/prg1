@@ -17,5 +17,9 @@ public class Main
 		Balloon b2 = new Balloon("yellow");
 		// get the color of the new ballon
 		System.out.println("Color: " + b2.getColor());
+		
+		
 	}
 }
+
+
