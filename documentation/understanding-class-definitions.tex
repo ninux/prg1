@@ -283,5 +283,155 @@ integer values. Play around with your class and get you some money!
 \lstinputlisting{../workspace/Account/src/money/Account.java}
 \lstinputlisting{../workspace/Account/src/money/Main.java}
 
+
+\subsection{Selfstudy-Questions OOP3}
+
+\subsubsection*{Exercise 1}
+\textit{What is a header? What is a body?}\\
+
+A header is a part of a method. For example \lstinline{public int getSpeed()}
+is the header of the method
+\begin{lstlisting}
+public int getSpeed()
+{
+	return speed;
+}
+\end{lstlisting}
+
+\subsubsection*{Exercise 2}
+\textit{Write down the signatures of the methods form class
+TicketMachine.}\\
+
+\begin{itemize}
+	\item getPrice( ... )
+	\item getBalance( ... )
+	\item insertMoney(int ...)
+	\item printTicket( ... )
+\end{itemize}
+
+\subsubsection*{Exercise 3}
+\textit{Where can you place expressions and definitions?}\\
+
+I don't understand that question.
+
+\subsubsection*{Exercise 4}
+\textit{What is a block?}\\
+
+A block ist the part of a method which is between the curly braces.
+
+\subsubsection*{Exercise 5}
+\textit{How many \lstinline{return} expressions do you find in Code 2.1?}\\
+
+
+
+\subsubsection*{Exercise 7}
+\textit{What's the meaning of the return-type \lstinline{void}?}\\
+
+The return type \lstinline{void} indicates that the method has no
+return value.
+
+\subsubsection*{Exercise 8}
+\textit{Fill out the table.}\\
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ll}
+\textbf{compound assignment} & \textbf{assignment} \\
+\lstinline!a += b! & \lstinline!a = a + b! \\
+\lstinline!a -= b! & \lstinline!a = a - b! \\
+\lstinline!a *= b! & \lstinline!a = a * b! \\
+\lstinline!a /= b! & \lstinline!a = a / b!\\
+\end{tabular}
+\end{table}
+
+\subsubsection*{Exercise 9}
+\textit{In the code of the TicketMachine, there are two places where you
+can place a compound assignment operator. Find those two
+places.}\\
+
+
+
+\subsubsection*{Exercise 12}
+\textit{Describe the conditional operator of the pseudo-code on page 42
+in german. Try to translate the code in german (except for the keywords
+\lstinline{if} and \lstinline{else}.}\\
+
+
+
+\subsubsection*{Exercise 16}
+\textit{At pitfall on page 48 is a very important information.
+Translate the first sentence in german.}\\
+
+
+
+\subsubsection*{Exercise 17}
+\textit{Fill out the following table.}\\
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{l | l | l | l}
+	& \textbf{Field}
+		& \textbf{formal parameter}
+			& \textbf{local variable} \\
+	\hline
+can store values?
+	& Yes
+		& No
+			& limited \\
+Where is/are they defined?
+	& class
+		& class
+			& method\\
+How long do they exist?
+	& permanent
+		& imaginary
+			& limited\\
+From where can you access them?
+	& global
+		& nowhere
+			& localy
+\end{tabular}
+\end{table}
+
+\subsection{Team Exercise 1}
+\begin{lstlisting}
+2.5 * (2+3) = 12.5
+(int) 2.5 * 2 + 3 = 7
+(int) 2.5 * (2+3) = 10
+(int) (2.5 * 2 + 3) = 8
+(int) (2.5 * (2+3)) = 12
+(int) 2.5 * 2 + (float) 3 = 7.0
+\end{lstlisting}
+
+\subsection{Team Exercises 2}
+
+\begin{itemize}
+	\item \textit{What are konventions?} \\
+		Konventions are rules that are not strict.
+	\item \textit{For whatr are they good for?} \\
+		They give the programmer a good orientation if every
+		coder used the same conventions or if a coder used a
+		convention consistantly. This improves the portability
+		and make the code easy to maintain.
+	\item \textit{Give the signatures for the following attributes
+		by konventions:}
+		\begin{itemize}
+			\item \lstinline{String secondName}
+			\item \lstinline{float hours}
+			\item \lstinline{int personalNumber}
+			\item \lstinline{Object myObject}
+		\end{itemize}
+	\subsubsection*{Answer}
+		\begin{itemize}
+			\item \lstinline{public String getSecondName()}
+			\item \lstinline{public float getHours()}
+			\item \lstinline{public int getPersonalNumber()}
+			\item \lstinline{public Object getMyObject()}
+		\end{itemize}
+	\item \textit{Can you define a konvention for mutator-methods?} \\
+		Of course you can, just as for getter-methods.
+\end{itemize}
+
+
 \subsection{Summary exercises}
 
