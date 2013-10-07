@@ -76,3 +76,568 @@
 	\end{tabular}
 \end{table}
 
+\subsection{Exercises from book (chapter 2)}
+\subsubsection*{Exercise 2.23}
+\textit{Compare the header and body of the \lstinline?getBalance? method with 
+the header and body of the \lstinline?getPrice? method. What are the 
+differences between them? }\\
+
+\subsubsection*{Exercise 2.24}
+\textit{If a call to \lstinline?getPrice? can be characterized as 
+"'What do ticketscost?"' how would you characterize a call to 
+\lstinline?getBalance?? }\\
+
+\subsubsection*{Exercise 2.25}
+\textit{If the name of \lstinline?getBalance? is changed to 
+\lstinline?getAmount?, does the return statement in the body of the method 
+also need to be changed for the code to compile? Try it out with BlueJ. What 
+does this tell you about the name of an accessor method and the nema of the 
+field associated with it? }\\
+
+\subsubsection*{Exercise 2.26}
+\textit{Write an accessor method \lstinline?getTotal? in the 
+\lstinline?TickatMachine? class. The new method should return the value of the 
+\lstinline?total? field. }\\
+
+\subsubsection*{Exercise 2.27}
+\textit{Try removing the return statement from the body of 
+\lstinline?getPrice?. What error message do you see now when you try compiling 
+the class? }\\
+
+\subsubsection*{Exercise 2.28}
+\textit{Compare the method headers of \lstinline?getPrice? and 
+\lstinline?printTicket? in Code 2.1. Apart from their names, what is the main 
+difference between them? }\\
+
+\subsubsection*{Exercise 2.29}
+\textit{Do the \lstinline?insertMoney? and \lstinline?printTicket? methods have 
+return statements? Why do you think this might be? Do you notice anything about 
+their headers that might suggest why they do not require return statements? }\\
+
+\subsubsection*{Exercise 2.30}
+\textit{Create a ticket machine with a ticket price of your choosing. Before 
+doing anything else, call the \lstinline?getBalance? method on it. Now call the 
+\lstinline?insertMoney? method(Code2.6) and give an non-zero positive amount of 
+money as the actual parameter. Now call \lstinline?getBalance? again. The two 
+calls to \lstinline?getBalance? should show different outputs, because the call 
+to \lstinline?insertMoney? had the effect of changing the machine's state via 
+its \lstinline?balance? field. }\\
+
+\subsubsection*{Exercise 2.31}
+\textit{How can we tell from just its header that \lstinline?setPrice? is a 
+method and not a constructor? \\
+\lstinline?public void setPrice(int cost)?}\\
+
+\subsubsection*{Exercise 2.32}
+\textit{Complete the body of the \lstinline?setPrice? method so that it 
+assigns the value of its parameter to the \lstinline?price? field. }\\
+
+\subsubsection*{Exercise 2.33}
+\textit{Complete the body of the following method, whose purpose is to add the 
+value of its parameter to a field named \lstinline?score?. \\
+\lstinline?/**
+ * Increase score by the given number of points. 
+ */
+public void increase(int points)
+{
+    ...
+}?}\\
+
+\subsubsection*{Exercise 2.34}
+\textit{Is the increase method a mutator? If so, how could you demonstrate 
+this? }\\
+
+\subsubsection*{Exercise 2.35}
+\textit{Complete the following method, whose purpose is to subtract the value 
+of its parameter from a field named \lstinline?price?. \\
+\lstinline?/**
+ * Reduce price by the given amount. 
+ */
+public void discount(int amount)
+{
+    ...
+}?}\\
+
+\subsubsection*{Exercise 2.36}
+\textit{Write down exactly what will be printed by the following statement: \\
+\lstinline?System.out.println("My cat has green eyes.");?}\\
+
+\subsubsection*{Exercise 2.37}
+\textit{Add a method called \lstinline?prompt? to the \lstinline?TicketMachine? 
+class. This should have a void return type and take no parameters. The body of 
+the method should print the following single line of output: \\
+\lstinline?Please insert the correct amount of money. ?}\\
+
+\subsubsection*{Exercise 2.38}
+\textit{What do you think would be printed if you altered the fourth statement 
+of \lstinline?printTicket? so that \lstinline?price? also has quotes around it, 
+as follows? \\
+\lstinline?System.out.println("\# " + "price" + " cents.");?}\\
+
+\subsubsection*{Exercise 2.39}
+\textit{What about the following version? \\
+\lstinline?SSystem.out.println("\# price cents.");?}\\
+
+\subsubsection*{Exercise 2.40}
+\textit{Could either of the previous two versions be used to show the price of 
+tickets in different ticket machines? Explain your answer. }\\
+
+\subsubsection*{Exercise 2.41}
+\textit{Add a \lstinline?showPrice? method to the \lstinline?TicketMachine? 
+class. This should have a void return type and take no parameters. The body of 
+the method should print: \\
+\lstinline?The price of a ticket is xyz cents- ?}\\
+
+\subsubsection*{Exercise 2.42}
+\textit{Create two ticket machines with differently priced tickets. Do calls 
+to their \lstinline?showPrice? methods show the same output, or different? How 
+do you explain this effect? }\\
+
+\subsubsection*{Exercise 2.43}
+\textit{Modify the constructor of \lstinline?TicketMachine? so that it no 
+longer has a parameter. Instead, the price of tickets should be fixed at 1,000 
+cents. What effect does this have when you construct ticket.machine objects 
+within BlueJ? }\\
+
+\subsubsection*{Exercise 2.44}
+\textit{Give the class two constructors. One should take a single parameter 
+that specifies the price, and the other should take no parameter and set the 
+price to be a default value of your choosing. Test your implementation by 
+creating machines via two different constructors. }\\
+
+\subsubsection*{Exercise 2.45}
+\textit{Implement a method, \lstinline?empty?, that simulates the effect of 
+removing all money from the machine. This method should have a void return 
+type, and its body should simply set the \lstinline?total? field to zero. Does 
+this method need to take any parameters? Test your method by reating a 
+machine, inserting some moneym printing some tickets, checking the total, and 
+then emptying the machine. Is the \lstinline?empty? method a mutator or an 
+accessor? }\\
+
+\subsubsection*{Exercise 2.46}
+\textit{Check that the behavior discussed here is accurate by creating a 
+\lstinline?TicketMachine? instance and calling \lstinline?insertMoney? with 
+various actual parameter values. Check the balance both before and after 
+calling \lstinline?insertMoney?. Does the balance ever change in the cases 
+when an error message is printed? Try to predict what will happen if you enter 
+the value zero as the parameter, and then see if you are right. }\\
+
+\subsubsection*{Exercise 2.47}
+\textit{Predict what you think will happen if you change the test in 
+\lstinline?insertMoney? to use the greater-than or equal-to operator: \\
+\lstinline?if(amount >= 0)?\\
+Check your predictions by running some tests. What difference does it make to 
+the behavior of the method? }\\
+
+\subsubsection*{Exercise 2.48}
+\textit{Rewrite the if-else statement so that the error message is printed if 
+the boolean expression is true but the balance is increased if the expression 
+is false. You will obviously have to rewrite the condition to make things 
+happen this way arround. }\\
+
+\subsubsection*{Exercise 2.49}
+\textit{In the figures project we looked at in Chapter 1 we used a 
+\lstinline?boolean? field to control a feature of the circle objects. What was 
+that feature? Was it well suited to being controlled by a type with only two 
+different values? }\\
+
+\subsubsection*{Exercise 2.50}
+\textit{In this version of \lstinline{printTicket}, we also do something 
+slightly different with the \lstinline{total} and \lstinline{balance} fields. 
+Compare the implementation of the method in Code 2.1 with that in Code 2.8 to 
+see whether you can tell what those differences are. Then check your 
+understanding by experimenting within BlueJ. }\\
+
+\subsubsection*{Exercise 2.51}
+\textit{Is it possible to remove the else part of the statement in the 
+\lstinline{printTicket} method (i.e., remove the word \lstinline{else} and the 
+block attached to it)? Try doing this and seeing if the code still compiles. 
+What happens now if you try to print a ticket without inserting any money? }\\
+
+\subsubsection*{Exercise 2.52}
+\textit{After a ticket has been printed, could the value in the 
+\lstinline{balance} field ever be set to a negative value by subtracting 
+\lstinline{price} from it? Justify your answer. }\\
+
+\subsubsection*{Exercise 2.53}
+\textit{So far, we have introduced you to two arithmetic operators, + and -, 
+that can be used in \textbf{arithmetic expressions} in Java. Take a look at 
+Appendix C to find out what other operators are available. }\\
+
+\subsubsection*{Exercise 2.54}
+\textit{Write an assignment statement that will store the result of 
+multiplying two variables, \lstinline{price} and \lstinline{discount}, into a 
+third variable, \lstinline{saving}}\\
+
+\subsubsection*{Exercise 2.55}
+\textit{Write an assignment statement that will divide the value in 
+\lstinline{total} by the value in \lstinline{count} and store the result in 
+\lstinline{mean}. }\\
+
+\subsubsection*{Exercise 2.56}
+\textit{Write an if statement that will compare the value in \lstinline{price} 
+against the value in \lstinline{budget}. If lstinline{price} is greater than 
+\lstinline{budget}, then print the message "'Too expensive"'; otherwise print 
+the message "'Just right"'. }\\
+
+\subsubsection*{Exercise 2.57}
+\textit{Modify your answer to the previous exercise so that the message 
+includes the value of your budget if the price is too high. }\\
+
+\subsubsection*{Exercise 2.58}
+\textit{Why does the following version of \lstinline{refundBalance} not give 
+the same results as the original? \\
+\lstinline{public int refundBalance()}\\
+\lstinline{\{}\\
+\lstinline{	balance = 0;}\\
+\lstinline{	return balance;}\\
+\lstinline{\}}\\
+What tests can you run to demonstrate that it does not? }\\
+
+\subsubsection*{Exercise 2.59}
+\textit{What happens if you try to compile the \lstinline{TicketMachine} class 
+with the following version of \lstinline{refundBalance}? \\
+\lstinline{public int refundBalance()}\\
+\lstinline{\{}\\
+\lstinline{	return balance;}\\
+\lstinline{	balance = 0;}\\
+\lstinline{\}}\\
+What do you know about return statements that helps to explain why this 
+version does not compile? }\\
+
+\subsubsection*{Exercise 2.60}
+\textit{What is wrong with the following version of the constructor of 
+\lstinline{TicketMachine}? \\
+\lstinline{public TicketMachine(int cost)}\\
+\lstinline{\{}
+\lstinline{	int price = cost;}\\
+\lstinline{	balance = 0;}\\
+\lstinline{	total = 0;}\\
+\lstinline{\}}\\
+Try out this version in the better-ticket-machine project. Does this version 
+compile? Create an object and then inspect its fields. Do you notice something 
+wrong about the value of the price field in the inspector with this version? 
+Can you explain why this? }\\
+
+\subsubsection*{Exercise 2.61}
+\textit{Add a new method, \lstinline{emptyMachine}, that is designed to 
+simulate emptying the machine of money. It should reset \lstinline{total} to 
+be zero but also return the value that was stored in \lstinline{total} before 
+it was reset. }\\
+
+\subsubsection*{Exercise 2.62}
+\textit{Rewrite the \lstinline{printTicket} method so that it declares a local 
+variable, \lstinline{amountLeftToPay}. This should then be initialized to 
+contain the difference between \lstinline{price} and \lstinline{balance}. 
+Rewrite the test in the conditional statement to check the value of 
+\lstinline{amountLeftToPay}. If its value is less than or equal to zero, a 
+ticket should be printed; otherwise, an error message should be printed 
+stating the amount left to pay. Test yout version to ensure that it behaves in 
+exactly the same way as the original version. Make sure that you call the 
+method more than once, when the machine is in diferent states, so that both 
+parts of the conditional statement will be executed on separate occassions. }\\
+
+\subsubsection*{Exercise 2.63}
+\textit{Challange exercise Suppose we wished a single \lstinline{TicketMachine} 
+object to be able to issue tickets of different prices. For instance, users 
+might press a button on the physical machine to select a discounted ticket 
+price. What further mathode and/or fields would need to be added to 
+\lstinline{TickeMachine} to allow this kind of functionality? Do you think 
+that many of the existing methods would need to be changed as well? \\
+Save the better-ticket-machine project under a new name, and implement your 
+changes in the new project. }
+
+\subsubsection*{Exercise 2.64}
+\textit{List the name and return type of this method: \\
+\lstinline{public String getCode()}\\
+\lstinline{\{}
+\lstinline{	return code;}\\
+\lstinline{\}}
+}
+
+\subsubsection*{Exercise 2.65}
+\textit{List the name of this method and the name and type of its parameter: \\
+\lstinline{public void setCredits(int creditValue)}\\
+\lstinline{\{}\\
+\lstinline{	return code;}\\
+\lstinline{\{}}\\
+
+\subsubsection*{Exercise 2.66}
+\textit{Write out the outer wrapping of a class called \lstinline{Person}. 
+Remember to include the curly brackets that mark the start and end of the 
+class body, but otherwise leave the body empty}\\
+
+\subsubsection*{Exercise 2.67}
+\textit{Write out the definitions for the following fields: 
+\begin{itemize}
+\item a field called \lstinline{name} of type \lstinline{String}
+\item a field of type \lstinline{int} called \lstinline{age}
+\item a field of type \lstinline{String} called \lstinline{code}
+\item a field called \lstinline{credits} of type \lstinline{int}
+\end{itemize}}\\
+
+\subsubsection*{Exercise 2.68}
+\textit{Write out a constructor for a class called \lstinline{Module}. The 
+constructor should take a single parameter of type \lstinline{String} called 
+\lstinline{moduleCode}. The body of the constructor should assign the value of 
+its parameter to a field calles \lstinline{code}. You don't have to include 
+the definition for \lstinline{code}, just the text of the constructor}\\
+
+\subsubsection*{Exercise 2.69}
+\textit{Write out a constructor for a class called \lstinline{Person}. The 
+constructor should take two parameters. The first is of type 
+\lstinline{string} and is called \lstinline{myName}. The second is of type 
+\lstinline{int} and is called \lstinline{myAge}. The first parameter should be 
+used to set the value of a field called \lstinline{name}, and the second 
+should set a field called \lstinline{age}. You don't have to include the 
+definitions for the fields, just the text of the constructor. }\\
+
+\subsubsection*{Exercise 2.70}
+\textit{Correct the error in this method: \\
+\lstinline{public void getAge()}
+\lstinline{\{}
+\lstinline{	return age;}\\
+\lstinline{\}}
+}\\
+
+\subsubsection*{Exercise 2.71}
+\textit{Write an accessor method called \lstinline{getName} that returns the 
+value of a field called \lstinline{name}, whose type is \lstinline{String}. }\\
+
+\subsubsection*{Exercise 2.72}
+\textit{Write a mutator method called \lstinline{setAge} that takes a single 
+parameter of type \lstinline{int} and sets the value of a field called 
+k\lstinline{age}. }\\
+
+\subsubsection*{Exercise 2.73}
+\textit{Write a method called \lstinline{printDetails} for a class that has a 
+field of type \lstinline{String} called \lstinline{name}. The 
+\lstinline{printDetails} method should print out a string of the form "'The 
+name of this person is"', followed by the value of the \lstinline{name} field. 
+For instance, if the value of the \lstinline{name} field is "'Helen"', then 
+\lstinline{printDetails} would print: \\
+\lstinline{The name of this person is Helen}}\\
+
+\subsubsection*{Exercise 2.74}
+\textit{Draw a picture of the form shown in Figure 2.3, representing the 
+initial state of a \lstinline{Student} object following its construction, with 
+the following actual parameter values: \\
+\lstinline{new Student("Benjamin Johnson", "738321")}}\\
+
+\subsubsection*{Exercise 2.75}
+\textit{What would be returned by \lstinline{getLoginName} for a student with 
+\lstinline{name "Henry Moore"} and \lstinline{id "557214"}? }\\
+
+\subsubsection*{Exercise 2.76}
+\textit{Create a \lstinline{Student} with name \lstinline{"djb"} and id 
+\lstinline{"859012"}. What happens when \lstinline{getLoginName} is called in 
+this student? Why do you think this is? }\\
+
+\subsubsection*{Exercise 2.77}
+\textit{The \lstinline{String} class defines a \lstinline{length} accessor 
+with the following header: \\
+\lstinline{/**}\\
+\lstinline{ * Return the number of characters in this string. }\\
+\lstinline{ */}\\
+\lstinline{public int length()}\\
+so the following is an example of its use with the \lstinline{String} variable 
+\lstinline{fullName}: \\
+\lstinline{fullName.length()}\\
+Add conditional statements to the constructor of \lstinline{Student} to print 
+an error message if either the length of the \lstinline{fullName} parameter is 
+less than four characters or the length of the \lstinline{studentId} parameter 
+is less than three characters. However, the constructor should still use those 
+parameters to set the \lstinline{name} and \lstinline{id} fields, even if the 
+error message is printed. Hint: Use if statements of the following form (that 
+is, having no \lstinline{else} part) to print the error messages. \\
+\lstinline{if(perform a test on one of the following parameters) \{}\\
+\lstinline{	print an error message if the test gave a true result}\\
+\lstinline{\}}\\
+See Appendix D for further details of the different types of if statements, if 
+necessary. 
+}\\
+
+\subsubsection*{Exercise 2.78}
+\textit{Challenge exercise Modify the \lstinline{getLoginName} method of 
+\lstinline{Student} so that it always generates a login name, even if either 
+the \lstinline{name} or the \lstinline{id} field is not strictly long enough. 
+For strings shorter than the required length, use the whole string. }\\
+
+\subsubsection*{Exercise 2.79}
+\textit{Consider the following expressions. Try to predict their rsults, and 
+then type them in the Code Pad to check your answers. \\
+\lstinline{99 + 3}\\
+\lstinline{"cat" + "fish"}\\
+\lstinline{"cat" + 9}\\
+\lstinline{9 + 3 + "cat"}\\
+\lstinline{"cat" + 3 + 9}\\
+\lstinline{"catfish".substring(3,4)}\\
+\lstinline{"catfish".substring(3,8)}\\
+Did you learn anything you did not expect from the exercise? If so, what was 
+it? }\\
+
+\subsubsection*{Exercise 2.80}
+\textit{Open the Code Pad in the better-ticket-machine project. Type the 
+following in the Code Pad: \\
+\lstinline{TicketMachine t1 = new TicketMachine(1000);}\\
+\lstinline{t1.getBalance()}\\
+\lstinline{t1.insertMoney(500);}\\
+\lstinline{t1.getBalance()}\\
+Take care to type these lines exaclty as they appear here; pay particular 
+attention to whether or not there is a semicolon at the end of the line. Note 
+what the calls to \lstinline{getBalance} return in each case. 
+}\\
+
+\subsubsection*{Exercise 2.81}
+\textit{Now add the following in the Code Pad: \\
+\lstinline{TicketMachine t2 = t1;}\\
+What would you expect a call to \lstinline{t2.getBalance()} to return? Try it 
+out. }\\
+
+\subsubsection*{Exercise 2.82}
+\textit{Add the following: \\
+\lstinline{t1.insertMoney(500);}\\
+What would you expect the following to return? think carefully about this 
+before you try it, and be sure to use the \lstinline{t2} variable this time. \\
+\lstinline{t2.getBalance()}\\
+Did you get the answer you expected? Can you find a connection between the 
+variables \lstinline{t1} and \lstinline{t2} that would explain what is 
+happening? }\\
+
+\subsubsection*{Exercise 2.83}
+\textit{Below is the outline for a \lstinline{Book} class which can be found 
+in the book-exercise project. The outline already defines two fields and a 
+constructor to initialize the fields. In this and the next few exercises, you 
+will add features to the class outline. \\
+Add two accessor methods to the class -- \lstinline{getAuthor} and 
+\lstinline{getTitle} -- that return the \lstinline{author} and 
+\lstinline{title} fields as their respective results. Test your class by 
+creating some instances and calling the methods. \\
+\lstinline{/**}\\
+\lstinline{ * A class that maintains information in a book. }\\
+\lstinline{ * This might form part of a larger application such }\\
+\lstinline{ * as a library system, for instance. }\\
+\lstinline{ * }\\
+\lstinline{ * @author (Insert your name here.)}\\
+\lstinline{ * @version (Insert today'sdate here.)}\\
+\lstinline{ */}\\
+\lstinline{public class Book}\\
+\lstinline{\{}\\
+\lstinline{	//The fields. }\\
+\lstinline{	private String author;}\\
+\lstinline{	private String title;}\\
+\lstinline{	}\\
+\lstinline{	/**}\\
+\lstinline{	 * Set the author and title fields when this object }\\
+\lstinline{	 * is constructed. }\\
+\lstinline{	 */}\\
+\lstinline{	public Book(String bookAuthor, String bookTitle)}\\
+\lstinline{	\{}\\
+\lstinline{		author = bookAuthor;}\\
+\lstinline{		title = bookTitle;}\\
+\lstinline{	\}}\\
+\lstinline{	// Add the methods here...}\\
+\lstinline{\}}\\
+}\\
+
+\subsubsection*{Exercise 2.84}
+\textit{Add two methods, \lstinline{printAuthor} and \lstinline{printTitle}, 
+to the outline \lstinline{Book} class. These should print the 
+\lstinline{author} and \lstinline{title} fields, respectively, to the terminal 
+window. }\\
+
+
+\subsubsection*{Exercise 2.85}
+\textit{Add a field, \lstinline{pages}, to the \lstinline{Book} class to store 
+the number of pages. This should be of type \lstinline{int}, and its initial 
+value should be passed to the single constructor, along with the 
+\lstinline{author} and \lstinline{title} strings. Include an appropriate 
+\lstinline{getPages} accessor method for this field. \\}\\
+
+\subsubsection*{Exercise 2.X}
+\textit{Are the \lstinline{Book} objects you have implemented immutable? 
+Justify your answer. }\\
+
+\subsubsection*{Exercise 2.86}
+\textit{Add a method, \lstinline{printDetails}, to the \lstinline{book} class. 
+This should print details of the author, title and pages to the terminal 
+window. It is your choice how the details are formatted. For instance, all 
+three items could be printed on a single line ^, or each could be printed on a 
+separate line. You might also choose to include some explanatory text to help 
+a user work out which is the author and which is the title, for example. \\
+\lstinline{Title: Robinson Crusoe, Author: Daniel Defoe, Pages: 232}}\\
+
+\subsubsection*{Exercise 2.87}
+\textit{Add a further field, \lstinline{refNumber}, to the \lstinline{Book} 
+class. This field can store a reference number for a library, for example. It 
+should be of type \lstinline{String} and initialized to the zero length string 
+\lstinline{("")} in the constructor, as its initial value is not passed in a 
+parameter to the constructor. Instead, define a mutator for it with the 
+following header: \\
+\lstinline{public void setRefNumber(String ref)}\\
+The body of this method should assign the value of the parameter to the 
+\lstinline{refNumber} field. Add a corresponding \lstinline{getRefNumber} 
+accessor to help you check that the mutator works correctly. }\\
+
+\subsubsection*{Exercise 2.88}
+\textit{Modify your \lstinline{printDetails} method to include printing the 
+reference number. However, the method should print the reference number only 
+if it has been set -- that is, the \lstinline{refNumber} string has a non-zero 
+length. If it has not been set, then print the string \lstinline{"ZZZ"} 
+instead. Hint: Use a conditional statement whose test calls the 
+\lstinline{length} method in the \lstinline{refNumber} string. }\\
+
+\subsubsection*{Exercise 2.89}
+\textit{Modify your \lstinline{setRefNumber} mutator so that it sets the 
+\lstinline{refNumber} field only if the parameter is a string of al least 
+three characters. If it is less than three, then print an error message and 
+leave the field unchanged. }\\
+
+\subsubsection*{Exercise 2.90}
+\textit{Add a further integer field, \lstinline{borrowed}, to the 
+\lstinline{Book} class. This keeps a count of the number of times a book has 
+been borrowed. Add a mutator, \lstinline{borrow}, to the class. This should 
+update the field by 1 each time it is called. Include an accessor, 
+\lstinline{getBorrowed}, that returns the value of this new field as its 
+result. Modify \lstinline{printDetails} so that it includes the value of this 
+field with an explanatory piece of text. }\\
+
+\subsubsection*{Exercise 2.91}
+\textit{Add a further \lstinline{boolean} field, \lstinline{courseText}, to 
+the \lstinline{Book} class. This records whether or not a book is being used 
+as a text book on a course. The field should be set through a parameter to the 
+constructor and the field is immutable. Provide an accessor method for it 
+called \lstinline{isCourseText}. }\\
+
+\subsubsection*{Exercise 2.92}
+\textit{Challenge exercise Create a new project, heater-exercise, within bluej. 
+Edit the details in the project description -- the test note you see in the 
+diagram. Create a class, \lstinline{Heater}, that contains a single field, 
+\lstinline{temperature} whose type is double-precision floating point -- see 
+Appendix B, section B.1, for the Java type name that corresponds to this 
+description. Define a constructor that takes no parameters. The 
+\lstinline{temperature} field should be set to the value 15.0 in the 
+constructor. Define the mutators \lstinline{warmer} and \lstinline{cooler}, 
+whose effect is to increase or decrease the value of temperature by 
+5.0$^\circ$ respectively. Define an accessor method to return the value of 
+\lstinline{temperature}. }\\
+
+\subsubsection*{Exercise 2.93}
+\textit{Challenge exercise Modify your \lstinline{Heater} class to define three 
+new double-precision floating point fields: \lstinline{min}, \lstinline{max} 
+and \lstinline{increment}. The values of \lstinline{min} and \lstinline{max} 
+should be set by parameters passed to the contructor. The Value of 
+\lstinline{increment} should be set to 5.0 in the constructor. Modify the 
+definitions of \lstinline{warmer} and \lstinline{cooler} so that they use the 
+value of \lstinline{increment} rather than an explict value of 5.0. Before 
+proceeding further with this exercise, check that everything works as before. \\
+Now modify the \lstinline{warmer} method so that it will not allow the 
+temperature to be set to a value greater than \lstinline{max}. Similarly modify 
+\lstinline{cooler} so that it will not allow \lstinline{cooler} to be set to a 
+value less than \lstinline{min}. Check that the class works properly. Now add a 
+method, \lstinline{setIncrement}. Once again, test that the class works as you 
+would expect it to by creating some \lstinline{Heater} objects within BlueJ. Do 
+things still work as expected if a negative value is passed to the 
+\lstinline{setIncrement} method? Add a check to this method to prevent a 
+negative value from being assigned to \lstinline{increment}. }\\
+
