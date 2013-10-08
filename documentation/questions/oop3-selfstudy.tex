@@ -135,13 +135,13 @@ assigns the value of its parameter to the \lstinline?price? field. }\\
 \subsubsection*{Exercise 2.33}
 \textit{Complete the body of the following method, whose purpose is to add the 
 value of its parameter to a field named \lstinline?score?. \\
-\lstinline?/**
- * Increase score by the given number of points. 
- */
-public void increase(int points)
-{
-    ...
-}?}\\
+\lstinline{/**}\\
+\lstinline{ * Increase score by the given number of points.}\\
+\lstinline{ */}\\
+\lstinline{public void increase(int points)}\\
+\lstinline{\{}\\
+\lstinline{    ...}\\
+\lstinline{\}}}\\
 
 \subsubsection*{Exercise 2.34}
 \textit{Is the increase method a mutator? If so, how could you demonstrate 
@@ -374,7 +374,7 @@ class body, but otherwise leave the body empty}\\
 \item a field of type \lstinline{int} called \lstinline{age}
 \item a field of type \lstinline{String} called \lstinline{code}
 \item a field called \lstinline{credits} of type \lstinline{int}
-\end{itemize}}\\
+\end{itemize}}
 
 \subsubsection*{Exercise 2.68}
 \textit{Write out a constructor for a class called \lstinline{Module}. The 
@@ -429,15 +429,15 @@ the following actual parameter values: \\
 \lstinline{name "Henry Moore"} and \lstinline{id "557214"}? }\\
 
 \subsubsection*{Exercise 2.76}
-\textit{Create a \lstinline{Student} with name \lstinline{"djb"} and id 
-\lstinline{"859012"}. What happens when \lstinline{getLoginName} is called in 
+\textit{Create a \lstinline{Student} with name \lstinline{\"djb\"} and id 
+\lstinline{\"859012\"}. What happens when \lstinline{getLoginName} is called in 
 this student? Why do you think this is? }\\
 
 \subsubsection*{Exercise 2.77}
 \textit{The \lstinline{String} class defines a \lstinline{length} accessor 
 with the following header: \\
 \lstinline{/**}\\
-\lstinline{ * Return the number of characters in this string. }\\
+\lstinline{ * Return the number of characters in this string.}\\
 \lstinline{ */}\\
 \lstinline{public int length()}\\
 so the following is an example of its use with the \lstinline{String} variable 
@@ -467,12 +467,12 @@ For strings shorter than the required length, use the whole string. }\\
 \textit{Consider the following expressions. Try to predict their rsults, and 
 then type them in the Code Pad to check your answers. \\
 \lstinline{99 + 3}\\
-\lstinline{"cat" + "fish"}\\
-\lstinline{"cat" + 9}\\
-\lstinline{9 + 3 + "cat"}\\
-\lstinline{"cat" + 3 + 9}\\
-\lstinline{"catfish".substring(3,4)}\\
-\lstinline{"catfish".substring(3,8)}\\
+\lstinline{\"cat\" + \"fish\"}\\
+\lstinline{\"cat\" + 9}\\
+\lstinline{9 + 3 + \"cat\"}\\
+\lstinline{\"cat\" + 3 + 9}\\
+\lstinline{\"catfish\".substring(3,4)}\\
+\lstinline{\"catfish\".substring(3,8)}\\
 Did you learn anything you did not expect from the exercise? If so, what was 
 it? }\\
 
@@ -514,22 +514,22 @@ Add two accessor methods to the class -- \lstinline{getAuthor} and
 \lstinline{title} fields as their respective results. Test your class by 
 creating some instances and calling the methods. \\
 \lstinline{/**}\\
-\lstinline{ * A class that maintains information in a book. }\\
-\lstinline{ * This might form part of a larger application such }\\
-\lstinline{ * as a library system, for instance. }\\
-\lstinline{ * }\\
+\lstinline{ * A class that maintains information in a book.}\\
+\lstinline{ * This might form part of a larger application such}\\
+\lstinline{ * as a library system, for instance.}\\
+\lstinline{ *}\\
 \lstinline{ * @author (Insert your name here.)}\\
 \lstinline{ * @version (Insert today'sdate here.)}\\
 \lstinline{ */}\\
 \lstinline{public class Book}\\
 \lstinline{\{}\\
-\lstinline{	//The fields. }\\
+\lstinline{	//The fields.}\\
 \lstinline{	private String author;}\\
 \lstinline{	private String title;}\\
-\lstinline{	}\\
+\\
 \lstinline{	/**}\\
-\lstinline{	 * Set the author and title fields when this object }\\
-\lstinline{	 * is constructed. }\\
+\lstinline{	 * Set the author and title fields when this object}\\
+\lstinline{	 * is constructed.}\\
 \lstinline{	 */}\\
 \lstinline{	public Book(String bookAuthor, String bookTitle)}\\
 \lstinline{	\{}\\
@@ -562,7 +562,7 @@ Justify your answer. }\\
 \textit{Add a method, \lstinline{printDetails}, to the \lstinline{book} class. 
 This should print details of the author, title and pages to the terminal 
 window. It is your choice how the details are formatted. For instance, all 
-three items could be printed on a single line ^, or each could be printed on a 
+three items could be printed on a single line, or each could be printed on a 
 separate line. You might also choose to include some explanatory text to help 
 a user work out which is the author and which is the title, for example. \\
 \lstinline{Title: Robinson Crusoe, Author: Daniel Defoe, Pages: 232}}\\
