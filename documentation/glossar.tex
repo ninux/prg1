@@ -117,3 +117,159 @@
 	plural=headers,
 	sort=header
 }
+
+\newglossaryentry{scope}
+{
+	name=scope,
+	description={The scope of a variable defines the section of source
+		code from which the variable can be accessed},
+	plural=scopes,
+	sort=scope
+}
+
+\newglossaryentry{lifetime}
+{
+	name=lifetime,
+	description={The lifetime of a variable describes how long the
+		variable continues to exist before it is destroyed},
+	plural=lifetimes,
+	sort=lifetime
+}
+
+\newglossaryentry{assignment}
+{
+	name=assignment,
+	description={An assignment (statement) is a directive to assign a
+		value into a variable, for example 
+		\lstinline{speed = newSpeed;} is an assignment.},
+	plural=assignments,
+	sort=assignment
+}
+
+\newglossaryentry{body}
+{
+	name=body,
+	description={A body is a part of an method. It is the part that is
+		bordered by the curly braces. The whole content between these
+		braces is called body (see header for contrast)},
+	plural=bodies,
+	sort=body
+}
+
+\newglossaryentry{mutator}
+{
+	name=mutator,
+	description={A mutator or mutator method is a method that provides
+		the ability to change fields of an object. For example
+		\lstinline?changeSize(int newSize)? is a typical mutator
+		method},
+	plural=mutators,
+	sort=mutator
+}
+
+\newglossaryentry{conditional statement}
+{
+	name=conditional statement,
+	description={A conditional statement takes one of two possible actions
+		based upon the result of a test. For example 
+		\lstinline?if(a<b) ... else ... ? is a typical conditional 
+		statement},
+	plural=conditional statements,
+	sort=conditional statement
+}
+
+\newglossaryentry{boolean expressions}
+{
+	name=boolean expressions,
+	description={A boolean expression is an expression that has only two
+		possible values: \lstinline?true? or \lstinline?false?.
+		They are often controlling conditional statements. For example
+		an \lstinline?if(a<b)? can only return a \lstinline?true? or
+		\lstinline?false?},
+	plural=boolean expressions,
+	sort=boolean expression
+}
+
+\newglossaryentry{local variable}
+{
+	name=local variable,
+	description={A local variable is a variable declared and used within a
+		single method. Its scope and lifetime are limited to that
+		specific method they're defined in. A special variant of local
+		variables are actual parameters},
+	plural=local variables,
+	sort=local variable
+}
+
+\newglossaryentry{abstraction}
+{
+	name=abstraction,
+	description={Abstraction describes the ability to ignore details and
+		focus attention on a higher level of a problem. As an example
+		think about an car as a Parking-Boy. You would ignore how
+		many seats the cas has, but not how big it is, because it's
+		relevant for your task.},
+	plural=abstractions,
+	sort=abstraction
+}
+
+\newglossaryentry{modularization}
+{
+	name=modularization,
+	description={Modularization is the process of dividing a whole into
+		well-defined parts that can be build and examined seperately
+		and that interact in well defined ways. For example a car as
+		a whole entitiy can be divided into modules such as the
+		engine, seats, radio, wheels and so on},
+	plural=modularization,
+	sort=modularization
+}
+
+\newglossaryentry{non-primitive types}
+{
+	name=non-primitive types,
+	description={Java has eight primitive types (
+		\lstinline?boolean?, \lstinline?char?,
+		\lstinline?byte?, \lstinline?short?, \lstinline?int?, 
+		\lstinline?long?, \lstinline?float?, \lstinline?double?) and
+		gives the programmer the ability to define own types of a
+		more complex manner. For example a class defines a new type 
+		with the name of the class. Variables that have a class as
+		their type can store objects of that class. A popular 
+		example of such a type is \lstinline?String? which in fact
+		is a class},
+}
+
+\newglossaryentry{primitive types}
+{
+	name=primitive types,
+	description={The primitive types in Java are the non-object types
+		\lstinline?boolean?, \lstinline?char?,
+		\lstinline?byte?, \lstinline?short?, \lstinline?int?, 
+		\lstinline?long?, \lstinline?float?, \lstinline?double?.
+		An important characteristic to primitive-types is, that they
+		don't have methods},
+	plural=primitive types,
+	sort=primitive types
+}
+
+\newglossaryentry{object reference}
+{
+	name=object reference,
+	description={Variables of an object type (non-primitive type) always
+		store references to objects},
+	plural=object references,
+	sort=object reference
+}
+
+\newglossaryentry{overloading}
+{
+	name=overloading,
+	description={In Java sources, classes may contain multiple constructors,
+		methods and variables (variable vs. parameter) with the same 
+		name. This is called overloading. In Java there is a keyword 
+		\lstinline?this? to
+		specify the variables so that the compiler can differ them}
+	plural=overloadings,
+	sort=overloading
+}
