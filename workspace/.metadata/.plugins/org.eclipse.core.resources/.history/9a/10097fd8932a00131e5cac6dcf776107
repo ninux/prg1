@@ -1,9 +1,0 @@
-package library;
-
-public class Main
-{
-	public static void main(String[] args)
-	{
-		Book b1 = new Book("Objects First with Java", "David Barnes", 70f, 2013);
-	}
-}

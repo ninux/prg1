@@ -7,6 +7,11 @@
 \subsubsection*{Exercise 1}
 \textit{How do you declare a referencevariable?}\\
 
+A referencevariable is a variable that points to an object.
+For example \lstinline{Account myAccount = new Account();} defines
+a referencevariable \lstinline{myAccount}. This variable doesn't 
+contain a value but a reference to the storage-space where the
+object lays (like a pointer in C).
 
 \subsubsection*{Exercise 2}
 \textit{Draw the object diagram to the BlueJ project "house" from 
@@ -32,29 +37,57 @@ chapter 1.}\\
 
 \begin{table}[h!]
 	\begin{tabular}{l c l l}
-	\lstinline!(3>2)! & \lstinline!^! & \lstinline!(4>5)! & \\
-	\lstinline!(3<2)! & \lstinline!^! & \lstinline!(4>5)! & \\
-	\lstinline!(3<2)! & \lstinline!&&! & \lstinline!(4>5)! &  \\
-	\lstinline!(3>2)! & \lstinline!||! & \lstinline!(4>5)! & \\
-	\lstinline?!(3>2)? &  &  &
+	Question & & & Result \\ \hline
+	\lstinline!(3>2)! & \lstinline!^! & \lstinline!(4>5)! & \lstinline!true! \\
+	\lstinline!(3<2)! & \lstinline!^! & \lstinline!(4>5)! & \lstinline!fasle! \\
+	\lstinline!(3<2)! & \lstinline!&&! & \lstinline!(4>5)! & \lstinline!false! \\
+	\lstinline!(3>2)! & \lstinline!||! & \lstinline!(4>5)! & \lstinline!true!\\
+	\lstinline?!(3>2)? &  &  & \lstinline!false!
 	\end{tabular}
 \end{table}
 
 \subsubsection*{Exercise 3}
 \textit{Solve the exercises 3.6 to 3.8}\\
 
+\textbf{3.6} Nothing happens. This implemetation is not a good idea. To improve
+it we could use a error-message that is returned.
+
+\textbf{3.7} We could not set the value to zero.
+
+\textbf{3.8} If would be true for all inputs, because their either >0 or <limit.
 
 \subsubsection*{Exercise 4}
 \textit{Solve the exercises 3.15 to 3.17 and 3.19}\\
 
+\textbf{3.15} The modulo operator returns the remainder of an division.
+
+\textbf{3.16} \lstinline!8%3! returns 2
+
+\textbf{3.17} \lstinline!-10%3! returns -1, \lstinline!10%-3! returns +1.
+
+\textbf{3.18} 5-1
+
+\textbf{3.19} m-1
 
 \subsubsection*{Exercise 5}
 \textit{Solve the exercise 3.21}\\
+
+\textbf{3.21} 
+\begin{lstlisting}
+if((value+1) < limit){
+	value++;
+}
+else{
+	value = 0;
+}
+\end{lstlisting}
 
 \subsubsection{Chapter 3.9 - Objects creating objects}
 
 \subsubsection*{Exercise 1}
 \textit{Solve the exercise 3.23}\\
+
+\textbf{3.23} The time is "00:00". The constructor is responsible for this value.
 
 \subsubsection{Chapter 3.10 - Multiple constructors}
 
@@ -63,21 +96,84 @@ chapter 1.}\\
 with the following object-creation.}\\
 \lstinline{new Student("Peter", 34);}
 
+\begin{lstlisting}
+// simple creator with no parameters
+public Student()
+{
+	name = "No-Name";
+	age = -1;
+}
+
+// creator with single-parameter name
+public Student(String newName)
+{
+	name = newName;
+	age = -1
+}
+
+// creator with single-parameter age
+public Student(int newAge)
+{
+	name = "No-Name";
+	age = newAge;
+}
+
+// creator with full paramterlist name, age
+public Student(String newName, int newAge)
+{
+	name = newName;
+	age = newAge;
+}
+\end{lstlisting}
 
 \subsubsection*{Exercise 2}
 \textit{Solve the exercises 3.28 and 3.29}\\
+
+\textbf{3.28} It creates two \lstinline!NumberDisplay! objects with the 
+overrolllimits 24 and 60. \\
+
+\textbf{3.29} Because it is set by the parameters given to the constructor.
 
 \subsubsection{Chapter 3.11 - Method calls}
 
 \subsubsection*{Exercise 1}
 \textit{Solve the exercise 3.30}\\
 
+\textbf{3.30} 
+\begin{lstlisting}
+// print the Payroll-Summary on Printer p1, two-sided
+p1.print("Payroll-Summary.txt", true)
+
+// print the Phone-List on Printer p1, single-sided
+p1.print("Phone-List.txt", false)
+
+// show the status of Printer p1 on the console
+System.out.println(p1.getSatus(20))
+
+// return the status of Printer p1
+p1.getStatus(10)
+\end{lstlisting}
+
 \subsubsection{Chapter 3.12 - Another example of object interaction}
 
 \subsubsection*{Exercise 1}
 \textit{Solve the exercises 3.33 and 3.34}\\
 
+\textbf{3.33}
+
+\lstinputlisting{../workspace/Mail-System/src/mails/Main.java}
+\lstinputlisting{../workspace/Mail-System/src/mails/MailServer.java}
+\lstinputlisting{../workspace/Mail-System/src/mails/MailClient.java}
+\lstinputlisting{../workspace/Mail-System/src/mails/MailItem.java}
+
+
+\textbf{3.34} 
+
 \subsubsection{Chapter 3.13 - Using a debugger}
 
 \subsubsection*{Exercise 1}
 \textit{Solve the exercises 3.35 to 3.42}\\
+
+\textbf{3.35 to 3.42} 
+
+\lstinputlisting{../workspace/Mail-System/src/mails/Sophie.java}
