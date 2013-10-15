@@ -273,3 +273,63 @@
 	plural=overloadings,
 	sort=overloading
 }
+
+\newglossaryentry{collection}
+{
+	name=collection,
+	description={A collection can store an arbitrary number of other 
+		objects. Common variants for collections in Java are the
+		\lstinline?ArrayList?-Objects and arrays},
+	plural=collections,
+	sort=collection
+}
+
+\newglossaryentry{loop}
+{
+	name=loop,
+	description={A loop is a functionality that is given by the 
+		elementary functions of a programming language, like in Java.
+		They are used to repeat a sequence of expressions (a body)
+		for a number of times, coupled to one or more conditions.
+		In Java there are three essential types of loops: 
+		The \lstinline?while?, \lstinline?do while? and
+		\lstinline?for? loop. There are also other types of loops
+		like the "foreach" loop},
+	plural=loops,
+	sort=loop
+}
+
+\newglossaryentry{iterator}
+{
+	name=iterator,
+	description={An iterator is an object that provides functionality to
+		iterate over all elements of a collection},
+	plural=iterators,
+	sort=iterator
+}
+
+\newglossaryentry{array}
+{
+	name=array,
+	description={An array is a special type of collection that can store
+		a fixed number of items. These items have to be of the same 
+		data type},
+	plural=arrays,
+	sort=array
+}
+
+\newglossaryentry{null}
+{
+	name=null,
+	description={\lstinline?null? is a reserved word in Java (and many
+		other programming languages) that indicates that a reference
+		is not referencing to something, that it is showing to 
+		\lstinline?null?. In Java it's used to mean "no object" 
+		because a refernece variable should point to a object, if it's
+		not so it's containing the reference \lstinline?null?. Also
+		a filed that has not been explicitly set will contain 
+		\lstinline?null? if it's not defined by an other default value
+		(like \lstinline?0? for variables of type  \lstinline?int?)},
+	plural=,
+	sort=null
+}
