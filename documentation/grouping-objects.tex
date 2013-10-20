@@ -127,19 +127,40 @@ are removed?}\\
 
 After removing index 0, the whole collection is shifted by $-1$, 
 so the index of the element, which was at index 5 in the beginning
-would now ba at $6-1=5$. Removing an index after the queried one has
+would now be at $6-1=5$. Removing an index after the queried one has
 non effect of the indexing, so it would still be 5.
 
 \subsubsection*{Exercise 7}
-\textit{Explanin the following declaration:}\\
+\textit{Explain the following declaration:}\\
 \lstinline?private ArrayList<Balloon> list = new ArrayList<>();?\\
 
+A private collection (ArrayList) of type Balloon is set up.
+
 \subsubsection*{Exercise 8}
-\textit{What is the connection between abstraction an ArrayLists?}\\
+\textit{What is the connection between abstraction and ArrayLists?}\\
+
+Abstraction has the goal to simplify as far as possible. The class
+ArrayList provides great funcionalities that are helping to use the 
+conecept of abstraction by minimizing effort in programming a complex
+class but using a library-class (ArrayList) which is giving a lot of
+useful and powerful methods. In other words, if we want to manage a
+collection, we don't want to use our time to implement complex code
+to manage our collection, we just want to specify how we want to 
+manage. So we use preexisting code (from a library-class like 
+java.util.ArrayList).
 
 \subsubsection*{Exercise 9}
 \textit{What is the difference of the methods remove() and get() on
 ArrayLists?}\\
+
+The \lstinline{remove()} method of ArrayList is removing the specified
+objects out of the collection. This is causing a reindexation of all
+items of the collection that have a higher index as the removed once.
+These following items will get a new index which is "actual index - 1".
+
+The \lstinline{get()} method of ArrayList is returning the element at
+the specified index. The element is in general a object but it could 
+also be a simple type.
 
 \subsubsection{Chapter 4.8 to 4.12 - The Iterator type}
 
