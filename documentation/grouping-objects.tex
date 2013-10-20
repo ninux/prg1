@@ -8,12 +8,39 @@
 \subsubsection*{Exercise 1}
 \textit{Solve the exercises 4.1 to 4.3}\\
 
+\textbf{4.1}
+
+\lstinputlisting{../workspace/Music-Organiser-V1/src/music/MusicOrganizer.java}
+\lstinputlisting{../workspace/Music-Organiser-V1/src/music/Main.java}
+
+\textbf{4.2} We don't get an error. As wee look at the code of the method
+we'll see, that the method is examinating if the index is "valid". If not
+it does not perform a remove action.
+
+\lstinputlisting[firstline=58, lastline=63]{../workspace/Music-Organiser-V1/src/music/MusicOrganizer.java}
+
+\textbf{4.3} The list is shifted, so that the previously second track is the
+first track after removing the first track.
+
 \subsubsection*{Exercise 2}
 \textit{What do you understand by "Java-Package"?}\\
+
+A Java-Package is just a collection of classes. It is a namespace to organize
+classes.
 
 \subsubsection*{Exercise 3}
 \textit{You want to use the library-class ArrayList. What expression makes it
 possible to use that library-class in your source code?}\\
+
+\noindent
+If we want to use a library-class, we have to import it to our source with
+
+\lstinline{import java.nameOfTheLibraryClass;} \\
+
+\noindent
+So to use the ArrayList we just have to write in our source 
+
+\lstinline{import java.util.ArrayList;} 
 
 \subsubsection{Chapter 4.4 to 4.7 - Numbering within collections}
 
