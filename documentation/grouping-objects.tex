@@ -47,11 +47,88 @@ So to use the ArrayList we just have to write in our source
 \subsubsection*{Exercise 4}
 \textit{Solve the exercises 4.4 to 4.7}\\
 
+\subsubsection*{Exercise 4.4, page 100}  
+\textit{Write a declaration of a private field named library that can hold an
+ArrayList. The elements of the ArrayList are of type Book.}\\
+
+\lstinline{private ArrayList<Book> library = new ArrayList<String>();}
+
+\subsubsection*{Exercise 4.5, page 100}
+\textit{Write a declaration of a local variable called cs101 that can hold an
+ArrayList of Student.}\\
+
+\lstinline{private ArrayList<Student> cs101 = new ArrayList<Student>();}
+
+I'm not really sure about the "local" in the exercise. Do I have to specify
+that this is private or not?
+
+\subsubsection*{Exercise 4.6, page 101}
+\textit{Write a declaration of a private field called tracks for sorting
+a collection of MusicTrack objects.}\\
+
+\lstinline{private ArrayList<MusicTrack> tracks = new ArrayList<MusicTrack>();}
+
+\subsubsection*{Exercise 4.7, page 101}
+\textit{Write assignments to the library, cs101 and track variables (which
+you defined in the previous three exercises) to create the appropriate 
+ArrayList objects. Write them once without using diamond and once with
+diamond notation if you are using Java 7 compiler.}\\
+
+\begin{lstlisting}
+library.add("Objects First with Java");
+cs101.add("Leonardo DaVinci");
+track.add("Free Software Song");
+\end{lstlisting}
+
+I'm not really sure what is the question here \dots
+
 \subsubsection*{Exercise 5}
 \textit{Solve the exercises 4.8 to 4.11}\\
 
+\subsubsection*{Exercise 4.8, page 102}
+\textit{If a collection stores 10 objects, what value would be returned from
+a call to its size method?}\\
+
+It would return 9.
+
+\subsubsection*{Exercise 4.9, page 102}
+\textit{Write a method call using get to return the fifth object stored in a
+collection called items.}\\
+
+\lstinline{items.get(4)}
+
+\subsubsection*{Exercise 4.10, page 102}
+\textit{What is the index of the last item stored in a collection of 15
+objects?}\\
+
+This would be 14.
+
+\subsubsection*{Exercise 4.11, page 102}
+\textit{Write a method call to add the object held in the variable 
+favoriteTrack to a collection called files.}\\
+
+\lstinline{addFavorite(favoriteTrack, files)}
+
+I'm not really sure about this question \dots
+
 \subsubsection*{Exercise 6}
 \textit{Solve the exercises 4.12 to 4.13}\\
+
+\subsubsection*{Exercise 4.12, page 103}
+\textit{Write a method call to remove the third object stored in a
+collection called dates.}\\
+
+\lstinline{dates.remove(2)}
+
+\subsubsection*{Exercise 4.13, page 103}
+\textit{Suppose that an object is stored at index 6 in a collection.
+What will be its index immediately after the objects at index 0 and 9
+are removed?}\\
+
+After removing index 0, the whole collection is shifted by $-1$, 
+so the index of the element, which was at index 5 in the beginning
+would now ba at $6-1=5$. Removing an index after the queried one has
+non effect of the indexing, so it would still be 5.
 
 \subsubsection*{Exercise 7}
 \textit{Explanin the following declaration:}\\
