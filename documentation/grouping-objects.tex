@@ -167,17 +167,90 @@ also be a simple type.
 \subsubsection*{Exercise 10}
 \textit{Solve the exercises 4.18 to 4.19}\\
 
+\subsubsection*{Exercise 4.18, page 106}
+\textit{What might the header of a listAllFiles method in the MusicOrganizer
+class look like? What sort of return type should it have? Does it need to 
+take any parameters}\\
+
+The header of such a method would certainly not have a parameter and
+probably the return type void since it would use
+\lstinline{System.out.println()} so the header could look like \\
+
+\lstinline{public void listAllFiles()}
+
+\subsubsection*{Exercise 4.19, page 106}
+\textit{We know that the first file name is stored at index zero in the
+ArrayList and the list stores the file names as strings, so could we write
+the body of listAllFiles along with the following lines?}
+\begin{lstlisting}
+System.out.println(files.get(0));
+System.out.println(files.get(1));
+System.out.println(files.get(2));
+\end{lstlisting}
+
+We could do so if we would be sure that there won't be more than three
+used indexes or three tracks. If we would like to have an arbitrary number
+of tracks we should use a other body, for instance with a loop.
+
+A easy and intended loop for this job is a so called \textit{for-each loop}.
+The course book is suggesting the following code.
+
+\begin{lstlisting}
+public void listAllFiles()
+{
+	for(String filename : files)
+	{
+		System.out.println(filename);
+	}
+}
+\end{lstlisting}
+
 \subsubsection*{Exercise 11}
 \textit{Solve the exercise 4.22}\\
+
+Just something to play in BlueJ (creating an ArrayList and add, remove, \dots,
+some objects to it).
 
 \subsubsection*{Exercise 12}
 \textit{Explain as detailed as possible the source code on page 108.}\\
 
+\begin{lstlisting}
+public void listAllFiles()
+{
+	for(String filename : files)
+	{
+		System.out.println(filename);
+	}
+}
+\end{lstlisting}
+
+In the first line we see the header of the method. It is declaring that the
+method is of type public, that it has no return type (void) and does not 
+take any parameters.
+
+In the third line we see the header of the so called for-each loop. This
+means translated "for each element of the ArrayList files, do the following
+body". Since the ArrayList files is containing Strings, we need to declare
+"element" as String. So for every round thru the loop, the incremented index
+of the element that it contains at this index is stored to the local variable
+"element" that we defined to be of type String.
+
+In the fifth line of code we see the print method, which is printing the
+"element" to the console, so it prints the String that is at the actual
+index of the loop.
+
 \subsubsection*{Exercise 13}
 \textit{Is it possible, that the body of an while-loop is never executed?}\\
 
+Yes of course it is possible because there is a condition that is deciding
+if the body is run or not.
+
 \subsubsection*{Exercise 14}
 \textit{Show two alternative expressions for no++}\\
+
+\lstinline{n += n;}\\
+
+\lstinline{n = n + n;}
 
 \subsubsection*{Exercise 15}
 \textit{An ArrayList can be traversed by an foreach-loop. Do you know other
