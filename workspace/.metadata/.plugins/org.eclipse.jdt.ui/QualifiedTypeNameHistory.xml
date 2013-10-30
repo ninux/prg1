@@ -4,4 +4,5 @@
 <fullyQualifiedTypeName name="library.Book"/>
 <fullyQualifiedTypeName name="mails.MailServer"/>
 <fullyQualifiedTypeName name="mails.MailClient"/>
+<fullyQualifiedTypeName name="music.MusicOrganizer"/>
 </qualifiedTypeNameHistroy>

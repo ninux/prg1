@@ -16,9 +16,7 @@ public class Main
 		// create a new ballon with the detailed constructor
 		Balloon b2 = new Balloon("yellow");
 		// get the color of the new ballon
-		System.out.println("Color: " + b2.getColor());
-		
-		
+		System.out.println("Color: " + b2.getColor());;
 	}
 }
 

@@ -1088,3 +1088,24 @@ Java Model Exception: Java Model Status ['Ex_4-22' is not a valid Java identifie
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
 !SUBENTRY 1 org.eclipse.jdt.core 4 -1 2013-10-20 21:14:35.927
 !MESSAGE 'Ex_4-22' is not a valid Java identifier
+!SESSION 2013-10-21 13:17:34.594 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=de_CH
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2013-10-22 09:06:54.818
+!MESSAGE TODO: implement ConvertingState's union efficently
+
+!ENTRY org.eclipse.ui 2 2 2013-10-23 19:10:38.871
+!MESSAGE Invalid property category path: org.eclipse.cdt.managedbuilder.ui.properties.Page_head_build (bundle: org.eclipse.cdt.ui, propertyPage: org.eclipse.cdt.managedbuilder.ui.properties.BuildLogPreferencePage)
+!SESSION 2013-10-26 15:59:33.485 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=de_CH
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.ui 2 2 2013-10-26 16:22:48.555
+!MESSAGE Invalid property category path: org.eclipse.cdt.managedbuilder.ui.properties.Page_head_build (bundle: org.eclipse.cdt.ui, propertyPage: org.eclipse.cdt.managedbuilder.ui.properties.BuildLogPreferencePage)
