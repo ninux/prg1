@@ -274,25 +274,119 @@ one and \lstinline{false} if not.
 \subsubsection*{Exercise 18}
 \textit{A variable that is declared for a classtype (or so called 
 reference-variable) can store the special value null. Explain the situation 
-with a drwing/sektch. What does it look like, if it's storing an object?}\\
+with a drawing/sketch. What does it look like, if it's storing an object?}\\
+
+The following sketch \ref{fig:null} shows a comparison of two variables of 
+type Balloon.
+One is just declared with \lstinline{Balloon a;} and the other is 
+initialized with \lstinline{Balloon b = new Balloon();}. 
+
+The difference is that \lstinline{b} is showing or pointing to the object 
+in the memory and since \lstinline{a} has no object to show to is has a 
+pointer to \lstinline{null}.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\textwidth]{null.pdf}
+	\caption{A declared and initialized object in comparison.}
+	\label{fig:null}
+\end{figure}
 
 \subsubsection{Chapter 4.15 to 4.17 - Summary}
 
 \subsubsection*{Exercise 19}
 \textit{Solve the exercises 4.62 to 4.65}\\
 
+\textbf{4.62} \lstinline{Person[] people;}
+
+\textbf{4.63} \lstinline{boolean[] vacant;}
+
+\textbf{4.64} ???
+
+\textbf{4.65} The declaration is wrong (syntax). It should look like
+
+\lstinline{int[] counts;}
+
+\lstinline{boolean[] occupied = new boolean[5000];}
+
 \subsubsection*{Exercise 20}
 \textit{Solve the exercises 4.66 to 4.68}\\
+
+\textbf{4.66}
+\begin{lstlisting}
+double[] readings;
+String[] urls;
+TicketMachine[] machines;
+
+readings = new double[6];
+urls = new String[90];
+machines = new TicketMachine[5];
+\end{lstlisting}
+
+\textbf{4.67} With \lstinline{String[] labels = new String[20]} 20 String 
+objects are created.
+
+\textbf{4.68} The correct expression is 
+\lstinline{double[] piece = new double[50];}
 
 \subsubsection*{Exercise 21}
 \textit{What are the pros and cons of Arrays?}\\
 
+\begin{itemize}
+	\item[\ding{51}] Arrays are more efficient in access.
+	\item[\ding{51}] Arrays can store primitive-types as well as objects.
+	\item[\ding{55}] Arrays have a fixed size. 
+\end{itemize}
+
 \subsubsection*{Exercise 22}
 \textit{How do you get the length of an Array?}\\
+
+The length of an array is accessable by the \lstinline{length} operator.
+
+\begin{lstlisting}
+// create an array of type int with the length 50
+int[] i = new int[50];
+
+// return the length of the array
+public int getLength(int[] array)
+{
+	return array.length;
+}
+\end{lstlisting}
 
 \subsubsection*{Exercise 23}
 \textit{Solve the exercises 4.69, 4.71, 4.73 and 4.74}\\
 
+\textbf{4.69}
+This will fail in an error called \textit{Out Of Bound Execption}.
 
+\textbf{4.71}
 
+\begin{lstlisting}
+public void printGreater(double[] marks, double mean)
+{
+	for(index = 0; index < marks.length;  index++)
+	{
+		if(marks[index] > mean)
+		{
+			System.out.println(marks[index])
+		}
+	}
+}
+\end{lstlisting}
 
+\textbf{4.73}
+
+\begin{lstlisting}
+public int numberOfAccesses()
+{
+	int total = 0;
+	for(ctr = 0; ctr < hourCounts.length; ctr++)
+	{
+		total += hourCounts[ctr]; 
+	}
+	return total;
+}
+\end{lstlisting}
+
+\textbf{4.74}

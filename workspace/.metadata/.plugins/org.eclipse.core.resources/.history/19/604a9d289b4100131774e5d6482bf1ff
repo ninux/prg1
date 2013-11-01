@@ -1,0 +1,62 @@
+package myiterator;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+class FloatArray implements Iterable<Float>
+{
+
+	@Override
+	public Iterator<Float> iterator() {
+		// TODO Auto-generated method stub
+		return new FloatArrayIterator();
+	}
+	
+}
+
+class FloatArrayIterator implements Iterator<Float>
+{
+	private float[] array = new float[]{1,2,3,4,5}; 
+	private int i = 0;
+	
+	public boolean hasNext()
+	{
+		if(i >= array.length)
+		{
+			return false;
+		}
+		return true;
+	}
+
+	@Override
+	public Float next() {
+		// TODO Auto-generated method stub
+		return array[i++];
+	}
+
+	@Override
+	public void remove() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+}
+
+
+public class Main
+{
+	public static void main(String[] args)
+	{
+		FloatArray tracks = new FloatArray();
+		ArrayList<Float> list = new ArrayList<Float>();
+		list.add(1.0f);
+		Iterator<Float> mine = list.iterator();
+		
+		while(mine.hasNext())
+		{
+			Float f = mine.next();
+			System.out.println(f);
+		}
+	}
+}
