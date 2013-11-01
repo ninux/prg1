@@ -1,0 +1,22 @@
+package support;
+
+public class Main
+{
+	public static void main(String[] args)
+	{
+		// create a support system and start it
+		//SupportSystem sys = new SupportSystem();
+		//sys.start();
+		
+		String s = "Hi my name is Avaj";
+		if(s.startsWith("my")){
+			System.out.println("found match at the very beginning");
+		}
+		if(s.startsWith("my", 1)){
+			System.out.println("found match after 1 substring");
+		}
+		if(s.startsWith("my", 2)){
+			System.out.println("found match after 2 substrings");
+		}
+	}	
+}

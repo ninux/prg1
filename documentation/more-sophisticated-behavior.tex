@@ -8,34 +8,181 @@
 \subsubsection*{Exercise 1}
 \textit{Solve the exercise 5.1}
 
+\lstinputlisting{../workspace/TechSupport/src/support/Main.java}
+
 \subsubsection*{Exercise 2}
 \textit{At page 157 and 158 there is a Method start() that uses a 
 while-loop. Create a code snippet with the same functionality by using a
 do-while loop.}
+
+\begin{lstlisting}
+public void start()
+{
+	boolean finished = false;
+
+	printWelcome();
+
+	do{
+		String input = reader.getInput();
+		if(input.startsWith("bye")){
+			finished = true;
+		} else{
+			String response = responder.generateResponse();
+			System.out.println(response);
+		}
+	}while(!finished)
+	
+	printGoodbye();
+}
+\end{lstlisting}
 
 \subsubsection{Chapter 5.3 - Reading class documentation}
 
 \subsubsection*{Exercise 3}
 \textit{Solve the exercises 5.2 to 5.5 as well as 5.7 to 5.11}
 
+\textbf{5.2} The Java documentation has a clear design. Every class like 
+String is described in different sections, to get as fast as possible to the
+information needed. This documentation is arranged by the following 
+sections:
+
+\begin{itemize}
+	\item Summary
+	\begin{itemize}
+		\item Nested
+		\item Field
+		\item Constructor
+		\item Method
+	\end{itemize}
+	\item Detail
+	\begin{itemize}
+		\item Field
+		\item Constructor
+		\item Method
+	\end{itemize}
+\end{itemize}
+
+\textbf{5.3} The class String has two methods called startsWith, where
+one method has only one parameter (String) and the other has two parameters
+(String and int).
+The method that has only one parameter is returning \lstinline{true} if the
+specified string is found at the very beginning of the specified String
+object.
+The other method with two parameters is returning \lstinline{true} if the
+specified string is found after the specified offset. The offest is a
+int value representing the number of characters.
+
+Here is an example for the behavior. Both of these \lstinline{if} statements
+are returning \lstinline{true}.
+
+\begin{lstlisting}
+String s = "Hi, my name is Avaj Elcaro.";
+
+// check if the very beginning of the String object is "Hi"
+if(s.startsWith("Hi")){
+	System.out.println("found match at the very beginning");
+}
+
+// check if the String object has the string "my" after the 4th character
+if(s.startsWith("my", 4)){
+	System.out.println("found match after the 4th character");
+\end{lstlisting}
+
+\textbf{5.4} There is a method in the class String that checks if a 
+String ends with a specified suffix.
+
+\begin{lstlisting}
+public boolean endsWith(String suffix)
+\end{lstlisting}
+
+\textbf{5.5} There is a method in the class String that returns the number
+of unicode characters in a specified string.
+
+\begin{lstlisting}
+public int length()
+\end{lstlisting}
+
 \subsubsection*{Exercise 4}
 \textit{In which package do you suppose the class FileWriter?
 Check your guess with the Java API documentation.}
 
+The class FileWriter is a part of the package java.io where the io stands
+for Input-Output.
+
 \subsubsection*{Exercise 5}
 \textit{With the class BufferReader you can read files line by line.
 How does that work? You can find the answer in the Java API documentation.}
+
+We can use the method readLine() for that job. Here is an example form
+\url{http://www.roseindia.net/java/beginners/java-read-file-line-by-line.shtml}
+
+\begin{lstlisting}
+import java.io.*;
+class FileRead 
+{
+ 	public static void main(String args[])
+  	{
+  		try{
+  			// Open the file
+			FileInputStream fstream = new FileInputStream("textfile.txt");
+  			// Get the object of DataInputStream
+  			DataInputStream in = new DataInputStream(fstream);
+  			BufferedReader br = new BufferedReader(new InputStreamReader(in));
+  			String strLine;
+  			//Read File Line By Line
+  			while ((strLine = br.readLine()) != null)   {
+  				// Print the content on the console
+				System.out.println (strLine);
+  			}
+  			//Close the input stream
+  			in.close();
+		}catch (Exception e){//Catch exception if any
+			System.err.println("Error: " + e.getMessage());
+  		}
+	}
+}
+\end{lstlisting}
 
 \subsubsection{Chapter 5.4 - Adding random behavior}
 
 \subsubsection*{Exercise 6}
 \textit{Solve the exercises 5.12 and 5.13}
 
+\textbf{5.12} The Random class is from the package java.util. It is used to
+generate a stream of pseudorandom numbers. An instance can be constructed
+with the following code.
+
+\begin{lstlisting}
+import java.util.Random;
+
+public class Main
+{
+	public static void main(String[] args)
+	{
+		// create an instance of Random
+		Random rand = new Random();
+
+		// print out 10 random numbers between 0 and 20
+		for(int i = 0; i < 10; i++)
+		{
+			System.out.println(rand.nextInt(21));
+		}
+	}
+}
+\end{lstlisting}
+
+\textbf{5.13} See 5.12
+
 \subsubsection*{Exercise 7}
 \textit{Solve the exercise 5.15}
 
+If we use \lstinline{rand.nextInt(100)} we will get any integer number 
+between 0 and 99.
+
 \subsubsection*{Exercise 8}
 \textit{Solve the exercise 5.18}
+
+
 
 \subsubsection{Chapter 5.5 - Packages and import}
 

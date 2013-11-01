@@ -6,7 +6,7 @@
 <fullyQualifiedTypeName name="mails.MailClient"/>
 <fullyQualifiedTypeName name="music.MusicOrganizer"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="myiterator.FloatArrayIterator"/>
 <fullyQualifiedTypeName name="myiterator.SquareIterable"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
