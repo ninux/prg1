@@ -1,0 +1,39 @@
+package search;
+
+import java.util.Random;
+
+public class Main
+{
+	public static void main(String[] args)
+	{
+		// create a random sequence
+		Random rand = new Random();
+		int size = 10;
+		int range = 100;
+		int[] seq = new int[size];
+		String sequence = "Sequence: ";
+		for(int i = 0; i < size; i++){
+			seq[i] = rand.nextInt(range) - (range/2);
+			sequence += seq[i] + "; ";
+		}
+		
+		// show the sequence
+		System.out.println(sequence);
+		
+		// get the biggest value
+		getBiggest(seq);
+	}
+	
+	public static int getBiggest(int[] sequence)
+	{
+		int biggest = 0;
+		
+		for(int i = 0; i < sequence.length; i++){
+			if(sequence[i] > biggest){
+				biggest = sequence[i];
+			}
+		}
+		
+		return biggest;
+	}
+}
