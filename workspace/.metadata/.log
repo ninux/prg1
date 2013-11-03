@@ -1397,3 +1397,15 @@ Binding(CTRL+D,
 
 !ENTRY net.sourceforge.vrapper.eclipse 1 0 2013-11-01 21:21:30.151
 !MESSAGE TODO: implement ConvertingState's union efficently
+!SESSION 2013-11-03 09:19:15.394 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=de_CH
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.ui 2 2 2013-11-03 09:21:15.021
+!MESSAGE Invalid property category path: org.eclipse.cdt.managedbuilder.ui.properties.Page_head_build (bundle: org.eclipse.cdt.ui, propertyPage: org.eclipse.cdt.managedbuilder.ui.properties.BuildLogPreferencePage)
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2013-11-03 09:49:13.992
+!MESSAGE TODO: implement ConvertingState's union efficently

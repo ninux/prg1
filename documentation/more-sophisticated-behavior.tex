@@ -1,19 +1,18 @@
 \section{More-sophisticated behavior}
 
-
 \subsection{Selfstudy-Questions OOP6}
 
 \subsubsection{Chapter 5.2 - The TechSupport system}
 
 \subsubsection*{Exercise 1}
-\textit{Solve the exercise 5.1}
+\textit{Solve the exercise 5.1}\\
 
 \lstinputlisting{../workspace/TechSupport/src/support/Main.java}
 
 \subsubsection*{Exercise 2}
 \textit{At page 157 and 158 there is a Method start() that uses a 
 while-loop. Create a code snippet with the same functionality by using a
-do-while loop.}
+do-while loop.}\\
 
 \begin{lstlisting}
 public void start()
@@ -39,7 +38,7 @@ public void start()
 \subsubsection{Chapter 5.3 - Reading class documentation}
 
 \subsubsection*{Exercise 3}
-\textit{Solve the exercises 5.2 to 5.5 as well as 5.7 to 5.11}
+\textit{Solve the exercises 5.2 to 5.5 as well as 5.7 to 5.11}\\
 
 \textbf{5.2} The Java documentation has a clear design. Every class like 
 String is described in different sections, to get as fast as possible to the
@@ -104,14 +103,14 @@ public int length()
 
 \subsubsection*{Exercise 4}
 \textit{In which package do you suppose the class FileWriter?
-Check your guess with the Java API documentation.}
+Check your guess with the Java API documentation.}\\
 
 The class FileWriter is a part of the package java.io where the io stands
 for Input-Output.
 
 \subsubsection*{Exercise 5}
 \textit{With the class BufferReader you can read files line by line.
-How does that work? You can find the answer in the Java API documentation.}
+How does that work? You can find the answer in the Java API documentation.}\\
 
 We can use the method readLine() for that job. Here is an example form
 \url{http://www.roseindia.net/java/beginners/java-read-file-line-by-line.shtml}
@@ -146,7 +145,7 @@ class FileRead
 \subsubsection{Chapter 5.4 - Adding random behavior}
 
 \subsubsection*{Exercise 6}
-\textit{Solve the exercises 5.12 and 5.13}
+\textit{Solve the exercises 5.12 and 5.13}\\
 
 \textbf{5.12} The Random class is from the package java.util. It is used to
 generate a stream of pseudorandom numbers. An instance can be constructed
@@ -174,27 +173,35 @@ public class Main
 \textbf{5.13} See 5.12
 
 \subsubsection*{Exercise 7}
-\textit{Solve the exercise 5.15}
+\textit{Solve the exercise 5.15}\\
 
 If we use \lstinline{rand.nextInt(100)} we will get any integer number 
 between 0 and 99.
 
 \subsubsection*{Exercise 8}
-\textit{Solve the exercise 5.18}
+\textit{Solve the exercise 5.18}\\
 
+Simple example of a random response program.
 
+\lstinputlisting{../workspace/Snippets/src/randomResponse/RandomResponse.java}
 
 \subsubsection{Chapter 5.5 - Packages and import}
 
 \subsubsection*{Exercise 9}
-\textit{Solve the exercises 5.21 and 5.22}
+\textit{Solve the exercises 5.21 and 5.22}\\
 
+\textbf{5.21} See Exercise 8 - 5.18
 
+\textbf{5.22} If we implement the response generation like in the example code 
+above, it will work for any number of responses in the ArrayList. This is 
+because the code is flexible for the size of the ArrayList.
 
+\newpage
 \subsection{Selfstudy-Questions ALG1}
 
 \subsubsection*{Exercise 10}
-\textit{Describe in words or as pseudocode one algorithm per problem.}
+\textit{Describe in words or as pseudocode one algorithm per problem.}\\
+
 \begin{enumerate}[label={(\alph*)}]
 	\item Calculate the product of two integers without a multiplication-operator.
 	\item Find the lowest number out of a sequence like $S = {4,-1,50,10,0,1,-2,5,10}$
@@ -202,7 +209,8 @@ between 0 and 99.
 
 \subsubsection*{Exercise 11}
 \textit{Implement an algorithm to calculate the greatest common divisor
-with the modulo operator (see ALG1 presentation, page 12).}
+with the modulo operator (see ALG1 presentation, page 12).}\\
+
 \begin{enumerate}[label={(\alph*)}]
 	\item Test your algorithm with some examples.
 	\item Change your algorithm so that you don't use the modulo operator. 
@@ -215,5 +223,6 @@ with the modulo operator (see ALG1 presentation, page 12).}
 
 \subsubsection*{Exercise 12}
 \textit{What's the order of the algorithm to calculate the n-th pseudo random 
-number z (see OOP6 presentation page 28 and ALG1 presentation page 15)?}
+number z (see OOP6 presentation page 28 and ALG1 presentation page 15)?}\\
+
 \[ z_{n+1} = (a \cdot Z_n + r) \% m \]
