@@ -9,4 +9,6 @@
 <fullyQualifiedTypeName name="myiterator.FloatArrayIterator"/>
 <fullyQualifiedTypeName name="myiterator.SquareIterable"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="multiplier.Multiplier"/>
 </qualifiedTypeNameHistroy>

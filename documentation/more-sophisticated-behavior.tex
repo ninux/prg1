@@ -203,8 +203,40 @@ because the code is flexible for the size of the ArrayList.
 \textit{Describe in words or as pseudocode one algorithm per problem.}\\
 
 \begin{enumerate}[label={(\alph*)}]
-	\item Calculate the product of two integers without a multiplication-operator.
-	\item Find the lowest number out of a sequence like $S = {4,-1,50,10,0,1,-2,5,10}$
+	\item \textit{Calculate the product of two integers without a 
+		multiplication-operator.}\\
+
+		One possible approach to solve this problem could be to
+		use simple addition and iteration. This is because a 
+		multiplication, for example $3 \cdot 5 = 15$, can be
+		substituted with $(3 + 3 + 3 + 3 + 3) = (5 + 5 + 5) = 15$.
+		\lstinputlisting{../workspace/Snippets/src/multiply/Multiplier.java}
+		\lstinputlisting{../workspace/Snippets/src/multiply/Main.java}
+
+		An alternative approach is to think of the factors as binary
+		numbers. In the binary system we multiply also by a addition.
+		See the following example: Lets multiply $11 \cdot 14 = 154$.
+		In binary this looks like following:
+		\[ \begin{array}{l r | l}
+			& \texttt{1011}_b & 11_d \\
+			\cdot & \textcolor{red}{1}
+				\textcolor{green}{1}
+				\textcolor{cyan}{1}
+				\textcolor{blue}{0}_b & 14_d \\
+			\hline \hline 
+			& \texttt{0000}_b & \textcolor{blue}{0} \cdot 1011_b \\
+			+ & \texttt{1011~}_b & \textcolor{cyan}{1} \cdot 1011_b \text{ and leftshift by 1} \\
+			+ & \texttt{1011~~}_b & \textcolor{green}{1} \cdot 1011_b \text{ and leftshift by 2}\\
+			+ & \texttt{1011~~~}_b & \textcolor{red}{1} \cdot 1011_b \text{ and leftshift by 3} \\
+			\hline \hline
+			= & \texttt{10011010}_b & 154_d
+		\end{array} \]
+		If we wanted to implement that alorithm, we would have to 
+		operate binary, but in fact that would be not really 
+		different form the fist approach.
+	\item \textit{Find the lowest number out of a sequence like 
+		$S = {4,-1,50,10,0,1,-2,5,10}$}\\
+
 \end{enumerate}
 
 \subsubsection*{Exercise 11}
