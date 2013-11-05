@@ -1,0 +1,26 @@
+package letter;
+
+import java.util.ArrayList;
+
+public class FormLetter
+{
+	private ArrayList<FormalAddress> fa = new ArrayList<>();
+	
+	
+	public void addAddress(	String firstname, 
+							String lastname,
+							String address,
+							String city)
+	{
+		FormalAddress newAdress = new FormalAddress(firstname, 
+													lastname,
+													address,
+													city);
+		fa.add(newAdress);
+	}
+	
+	void print(int actualYear, String subject, String textBody)
+	{
+		for()
+	}
+}

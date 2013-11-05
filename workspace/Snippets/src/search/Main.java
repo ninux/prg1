@@ -29,7 +29,7 @@ public class Main
 	
 	public static int getBiggest(int[] sequence)
 	{
-		int biggest = 0;
+		int biggest = sequence[0];
 		for(int i = 0; i < sequence.length; i++){
 			if(sequence[i] > biggest){
 				biggest = sequence[i];
@@ -40,7 +40,7 @@ public class Main
 	
 	public static int getSmallest(int[] sequence)
 	{
-		int smallest = 0;
+		int smallest = sequence[0];
 		for(int i = 0; i < sequence.length; i++){
 			if(sequence[i] < smallest){
 				smallest = sequence[i];

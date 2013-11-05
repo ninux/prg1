@@ -1,0 +1,14 @@
+package letter;
+
+public class FormalAddress
+{
+	public FormalAddress()
+	{
+		
+	}
+	
+	private String fisrtname = "Default";
+	private String lastname = "Default";
+	private String address = "Default";
+	private String city = "Default";
+}

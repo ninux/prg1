@@ -263,3 +263,17 @@ with the modulo operator (see ALG1 presentation, page 12).}\\
 number z (see OOP6 presentation page 28 and ALG1 presentation page 15)?}\\
 
 \[ z_{n+1} = (a \cdot Z_n + r) \% m \]
+
+\subsection{Programming Exercise}
+\textit{Write a class FormLetter that is able to produce serial letters.
+The class has an ArrayList of type FormalAddress (see OOP3). With the 
+method addAddress() a new object of type FormalAddress is generated and
+added to the ArrayList. With the method void print(int actualYear, String
+subject, String textBody) a new serial letter is generated for all 
+elements in the ArrayList. The letter contains a greeting, a subject and
+of cource the text itself. This shall be printed to the console.}
+
+\lstinputlisting{../workspace/FormLetter/src/letter/Main.java}
+\lstinputlisting{../workspace/FormLetter/src/letter/FormLetter.java}
+\lstinputlisting{../workspace/FormLetter/src/letter/FormalAddress.java}
+
