@@ -1,0 +1,13 @@
+package list;
+
+public class Main
+{
+	public static void main(String[] args)
+	{
+		ListIteratorApplication lia = new ListIteratorApplication();
+		
+		lia.iterateDown();
+		
+		lia.iterateUp();
+	}
+}

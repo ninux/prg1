@@ -1,0 +1,45 @@
+package list;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class ListIteratorApplication
+{
+	ArrayList<String> sentence = new ArrayList<String>();
+	
+	public ListIteratorApplication()
+	{
+		sentence.add("With");
+		sentence.add("the"); 
+		sentence.add("ListIterator");
+		sentence.add("it");
+		sentence.add("is");
+		sentence.add("possible");
+		sentence.add("to");
+		sentence.add("travers");
+		sentence.add("Lists");
+		sentence.add("back");
+		sentence.add("and");
+		sentence.add("forth");	
+	}
+	
+	public void iterateDown(){
+		Iterator<String> it = sentence.iterator();
+		while(it.hasNext()){
+			System.out.print(it.next() + " ");
+		}
+		System.out.println("");
+	}
+	
+	public void iterateUp(){
+		Iterator<String> it = sentence.iterator();
+		for(int i = sentence.size()-1; i > 0; i--){
+			System.out.print(sentence.get(i) + "");
+		}
+		System.out.println("");
+	}
+	
+	public void iterateBothWays(){
+	
+	}
+}
