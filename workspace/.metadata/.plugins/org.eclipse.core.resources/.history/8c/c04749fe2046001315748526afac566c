@@ -1,0 +1,17 @@
+package recursions;
+
+//package recursions;
+
+public class Main
+{
+	public static void main(String[] args)
+	{
+		int[] myRow = new int[]{1,2,3,4,5};
+		int size = myRow.length;
+		reverse(myRow, size);
+	}
+	
+	public static void reverse(int[] array, int length){
+		
+	}
+}

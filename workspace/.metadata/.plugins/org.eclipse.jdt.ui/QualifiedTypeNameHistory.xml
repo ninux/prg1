@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="library.Book"/>
 <fullyQualifiedTypeName name="mails.MailServer"/>
 <fullyQualifiedTypeName name="mails.MailClient"/>
 <fullyQualifiedTypeName name="music.MusicOrganizer"/>
-<fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="myiterator.FloatArrayIterator"/>
 <fullyQualifiedTypeName name="myiterator.SquareIterable"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="multiplier.Multiplier"/>
+<fullyQualifiedTypeName name="letter.FormalAddress"/>
+<fullyQualifiedTypeName name="letter.FormLetter"/>
+<fullyQualifiedTypeName name="ListIteratorApplication"/>
+<fullyQualifiedTypeName name="java.lang.Iterable"/>
+<fullyQualifiedTypeName name="list.ListIteratorApplication"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.util.ListIterator"/>
+<fullyQualifiedTypeName name="java.util.StringTokenizer"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 </qualifiedTypeNameHistroy>

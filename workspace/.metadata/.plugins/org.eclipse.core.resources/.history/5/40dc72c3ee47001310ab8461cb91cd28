@@ -1,0 +1,83 @@
+package maxSubSum;
+
+import java.util.Random;
+
+public class Main
+{
+	public static void main(String[] args)
+	{	
+		// this is the sequence given by the exercise
+		int[] mySeq = new int[]{5, -8, 3, 4, -5, 7, -2, -7, 3, 5};
+		maxSubtotal(mySeq, true);
+	
+		mySeq = getRandomArray(mySeq, 10, true);
+		maxSubtotal(mySeq, true);
+	}
+	
+	public static int maxSubtotal(int[] sequence, boolean showMaxSequence){
+		int start = 0;
+		int end = 0;
+		int max = 0;
+		
+		for(int i = 0; i < sequence.length; i++){
+			int subtotal = 0;
+			// System.out.print("{ ");
+			for(int a = 0; a <= i; a++){
+				subtotal += sequence[a];
+				// System.out.print(sequence[a] + ", ");
+			}
+			if(subtotal > max){
+				start = 0;
+				end = i;
+				max = subtotal;
+			}
+			// System.out.print("} = " + subtotal);
+			// System.out.println("");
+		}
+		
+		for(int i = 1; i < sequence.length; i++){
+			int subtotal = 0;
+			// System.out.print("{ ");
+			for(int a = 0+i; a < sequence.length; a++){
+				subtotal += sequence[a];
+				// System.out.print(sequence[a] + ", ");
+			}
+			if(subtotal > max){
+				start = i;
+				end = sequence.length;
+				max = subtotal;
+			}
+			// System.out.print("} = " + subtotal);
+			// System.out.println("");
+		}
+		if(showMaxSequence){
+			System.out.print("The sequence with maximum sum is {");
+			for(int i = start; i <= end; start++){
+				System.out.print(sequence[i]);
+				if(i!=end){
+					System.out.print(", ");
+				}
+				System.out.print("}");
+				System.out.println("");
+			}
+		}
+		System.out.println("The maximum sum is " + max);
+		return max;
+	}
+	
+	public static int[] getRandomArray(int[] array, int range, boolean signed){
+		if(signed){
+			Random rand = new Random();
+			for(int i = 0; i < array.length; i++){
+				array[i] = rand.nextInt(range)-(range/2);
+			}
+			return array;
+		} else{
+			Random rand = new Random();
+			for(int i = 0; i < array.length; i++){
+				array[i] = rand.nextInt(range);
+			}
+			return array;
+		}
+	}
+}

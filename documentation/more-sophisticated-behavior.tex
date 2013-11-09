@@ -278,6 +278,7 @@ of cource the text itself. This shall be printed to the console.}
 \lstinputlisting{../workspace/FormLetter/src/letter/FormalAddress.java}
 
 \subsection{Team-Exercise}
+\subsubsection{Exercise 1}
 \textit{Create a class ListIteratorApplication with the attribute of type
 ArrayList for Strings. Fill the ArrayList with the words of the sentence
 "With the iterator it is possible to tavers Lists back and forth".
@@ -298,3 +299,34 @@ ArrayList for Strings. Fill the ArrayList with the words of the sentence
 
 \lstinputlisting{../workspace/ListApp/src/list/Main.java}
 \lstinputlisting{../workspace/ListApp/src/list/ListIteratorApplication.java}
+
+\subsubsection{Exercise 2}
+\textit{A sequence of integers is arranged in an array.
+	A subsequence of a sequence is of arbitrary length but is combined
+	by trailed parts of it. See the following example.} \\ \\
+\lstinline!int[] series = {5, -8, 3, 4, -5, 7, -2, -7, 3, 5}! \\
+\lstinline!int[] subseries1 = {5, -8, 3}! \\
+\lstinline!int[] subseries2 = {-5, 7, -2, -7, 3}! \\ \\
+\textit{Of course an empty sequence is also a valid subsequence.
+A subtotal is the sum of all entries of a subsequence. The subtotal of
+subseries1 form the example is 0, the subtotal of subseries2 is -4.
+An empty subsequence has the subtotal 0.
+The following pseudocode describes a intuitiv algorithm.}
+
+\begin{lstlisting}
+For all start values form 0 up to the length of the sequence
+    For all end values from start value up to the length of the sequence
+        Calculate the sum of the subsequence form start value up to the end value
+        Is it the maximum sum?
+\end{lstlisting}
+
+\textit{
+\begin{enumerate}
+	\item What order has the algorithm described above?
+	\item Create a method public int maxSubtotal(int[] sequence) in class
+		Series, which implements the algorithm above.
+	\item Test your implementation with a testmethod, which generates 
+		different sequences and calls the method maxSubtotal().
+\end{enumerate}
+}
+

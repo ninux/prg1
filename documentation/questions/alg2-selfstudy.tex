@@ -1,0 +1,32 @@
+\subsection{Selfstudy-Questions ALG1}
+
+\subsubsection*{Exercise 7}
+\textit{The following method shall be called with a actual parameter.
+Durign the execution the maximum height of the call-stack is 5.
+So how many times was the method coolMethod() called?} \\
+
+\begin{lstlisting}
+public int coolMethod(int n)
+{
+	if(n >= 2){
+		return (coolMehtod(n-1) + coolMethod(n-2));
+	} 
+	else{
+		return n;
+	}
+}
+\end{lstlisting}
+
+\subsubsection*{Exercise 8}
+\textit{Implement a recursive algorithm for the calculation of the
+faculty (see presentation ALG2, page 9). Debug you method for the
+faculty of 4.} \\
+
+\subsubsection*{Exercise 9}
+\textit{Implement a recursive method to print an array forwards and
+ backwards (see presentation ALG2, pages 29 and 30).} \\
+
+\subsubsection*{Exercise 10}
+\textit{Implement a recursive method that is calculating the sum of
+all integer values of an array. Make a documentation with javadoc.} \\
+
