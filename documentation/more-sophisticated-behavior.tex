@@ -330,3 +330,77 @@ For all start values form 0 up to the length of the sequence
 \end{enumerate}
 }
 
+
+
+\subsection{Selfstudy-Questions OOP7}
+
+\subsubsection{Chapter 5.6 - Using maps for associations}
+
+\subsubsection*{Exercise 1}
+\textit{Solve the exercises 5.24 to 5.30} \\
+
+\textbf{5.24} HashMap is a parameterized class and these are
+the mehtods that depend on the type.
+
+\textbf{5.25} If we want to know how many entries are 
+contained in a map we can use the \lstinline{size()} method.
+
+\textbf{5.26} A very simple phone book implementation with HashMap.
+\lstinputlisting{../workspace/Snippets/src/phoneBook/Main.java}
+\lstinputlisting{../workspace/Snippets/src/phoneBook/MapTester.java}
+
+\subsubsection*{Exercise 2}
+\textit{For what kind of lookups are maps the ideal collections?} \\
+
+\subsubsection{Chapter 5.8 - Dividing Strings}
+
+\subsubsection*{Exercise 3}
+\textit{Solve the exercises 5.35 and 5.37} \\
+
+\subsubsection{Chapter 5.10 - Writing class documentation}
+
+\subsubsection*{Exercise 4}
+\textit{Solve the exercises 5.46 to 5.48} \\
+
+\subsubsection*{Exercise 5}
+\textit{Comment one of your own projects with javadoc.} \\
+
+\subsubsection{Chapter 5.13 - Class variables and constants}
+
+\subsubsection*{Exercise 6}
+\textit{Solve the exercise 5.68} \\
+
+
+
+\subsection{Selfstudy-Questions ALG1}
+
+\subsubsection*{Exercise 7}
+\textit{The following method shall be called with a actual parameter.
+Durign the execution the maximum height of the call-stack is 5.
+So how many times was the method coolMethod() called?} \\
+
+\begin{lstlisting}
+public int coolMethod(int n)
+{
+	if(n >= 2){
+		return (coolMehtod(n-1) + coolMethod(n-2));
+	} 
+	else{
+		return n;
+	}
+}
+\end{lstlisting}
+
+\subsubsection*{Exercise 8}
+\textit{Implement a recursive algorithm for the calculation of the
+faculty (see presentation ALG2, page 9). Debug you method for the
+faculty of 4.} \\
+
+\subsubsection*{Exercise 9}
+\textit{Implement a recursive method to print an array forwards and
+ backwards (see presentation ALG2, pages 29 and 30).} \\
+
+\subsubsection*{Exercise 10}
+\textit{Implement a recursive method that is calculating the sum of
+all integer values of an array. Make a documentation with javadoc.} \\
+
