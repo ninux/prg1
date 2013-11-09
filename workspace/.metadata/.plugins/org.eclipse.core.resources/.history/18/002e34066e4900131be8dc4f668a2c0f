@@ -21,8 +21,8 @@ public class MapTester
 		return myMap.get(name);
 	}
 	
-	public boolean checkForKey(String key)
+	public boolean checkForKey(HashMap key)
 	{
-		return myMap.containsKey(key);
+		myMap.containsKey(key);
 	}
 }

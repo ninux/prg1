@@ -14,12 +14,6 @@ public class Main
 		// lookup for the numbers
 		System.out.println(myContacts.lookupNumber("Richard Stallman"));
 		System.out.println(myContacts.lookupNumber("Donald Ervin Knuth"));
-		
-		if(myContacts.checkForKey("Richard Stallman")){
-			System.out.println("Yep, he's in your phonebook!");
-		} else{
-			System.out.println("Nope, he's not in your phonebook!");
-		}
 	}
 	
 }

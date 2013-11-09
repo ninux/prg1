@@ -20,9 +20,4 @@ public class MapTester
 	{
 		return myMap.get(name);
 	}
-	
-	public boolean checkForKey(String key)
-	{
-		return myMap.containsKey(key);
-	}
 }

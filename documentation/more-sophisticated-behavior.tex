@@ -349,13 +349,77 @@ contained in a map we can use the \lstinline{size()} method.
 \lstinputlisting{../workspace/Snippets/src/phoneBook/Main.java}
 \lstinputlisting{../workspace/Snippets/src/phoneBook/MapTester.java}
 
+\textbf{5.27} If a map is holding a key and a new pair is added with
+the same key, the previous value is overwritten by the new value.
+See the follwing example.
+
+\begin{lstlisting}
+// add a pair for the key "A" with value "a"
+myMap.put("A", "a");
+
+// add a pair for the key "A" with value "b"
+myMap.put("A", "b");
+
+// lookup the value for the key "A"
+System.out.println(myMap.get("A"))
+\end{lstlisting}
+
+The output will be \lstinline{"b"} and there is only one pair for 
+the key \lstinline{"A"}.
+
+\textbf{5.28} \textcolor{red}{I don't get the question.}
+
+\textbf{5.29} If I want to know if there is already a key stored contained
+in a map I have to use the \lstinline{containsKey(Object key)} method.
+
+\begin{lstlisting}
+// add a pair for the key "A" with value "a"
+myMap.put("A", "a");
+
+// add a pair for the key "A" with value "b"
+myMap.put("A", "b");
+
+// check for the key "A"
+if(myMap.contains("A")){
+	System.out.println("Key is already there!");
+}
+else{
+	System.out.println("Key isn't set yet!");
+}
+\end{lstlisting}
+
+\textbf{5.30} \textcolor{red}{I don't get the question.}
+
 \subsubsection*{Exercise 2}
 \textit{For what kind of lookups are maps the ideal collections?} \\
+Maps are ideal for paired information like a phonebook or similar.
 
 \subsubsection{Chapter 5.8 - Dividing Strings}
 
 \subsubsection*{Exercise 3}
 \textit{Solve the exercises 5.35 and 5.37} \\
+
+\textbf{5.35} The method \lstinline{split()} is used to separate a string
+into different strings. The method is taking one parameter which is defining
+the separator. See the following example.
+
+\begin{lstlisting}
+String myString = "Hello. My Name is Foo. I live in Bar."
+
+String[] mySubStrings = myString.split(".");
+\end{lstlisting}
+
+This example above will create a new array of String with size 2 and the 
+strings 
+\lstinline{"Hello"}, \lstinline{"My Name is Foo"}, \lstinline{"I live in Bar"}.
+
+\textbf{5.36} If you want to split a string at ":" then give that as parameter
+to the split method.
+
+\textbf{5.37} If you split a string in pieces and return them to an HashSet,
+then you will have every string only once in that HashSet. If you return it
+to an ArrayList you'll get the whole string there and it's indexed, so you can
+only search by iteration.
 
 \subsubsection{Chapter 5.10 - Writing class documentation}
 
