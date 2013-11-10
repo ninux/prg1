@@ -18,14 +18,7 @@ public class Main
 		int[] myRow = new int[]{1,2,3,4,5};
 		reverse(myRow, (myRow.length-1));
 	}
-
-	/**
-	 * This method is taking an array and prints it in reverse order.
-	 * The index specifies the first element of the array that shall 
-	 * be printed. The common value for the index is (array.length - 1).
-	 * @param array
-	 * @param index
-	 */
+	
 	public static void reverse(int[] array, int index){
 		System.out.println(array[index]);
 		if(index > 0){

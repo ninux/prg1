@@ -460,12 +460,26 @@ see \url{http://de.wikipedia.org/w/index.php?title=Javadoc&oldid=124140284}
 \subsubsection*{Exercise 5}
 \textit{Comment one of your own projects with javadoc.} \\
 
+\lstinputlisting{../workspace/Snippets/src/recursions/Main.java}
+
 \subsubsection{Chapter 5.13 - Class variables and constants}
 
 \subsubsection*{Exercise 6}
 \textit{Solve the exercise 5.68} \\
-
-
+\begin{itemize}
+	\item A public variable that is used to measure tolerance, with the value 0.001. \\
+		\begin{lstlisting}
+		public static final double TOLERANCE = 0.001;
+		\end{lstlisting}
+	\item A private variable that is used to indicate a pass mark, with the integer value of 40.
+		\begin{lstlisting}
+		private static final int PASSMARK = 40;
+		\end{lstlisting}
+	\item A public character variable that is used to indicate that the help command is 'h'.
+		\begin{lstlisting}
+		public static final char HELP = 'h';
+		\end{lstlisting}
+\end{itemize}
 
 \subsection{Selfstudy-Questions ALG1}
 
