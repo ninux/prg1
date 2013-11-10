@@ -426,6 +426,37 @@ only search by iteration.
 \subsubsection*{Exercise 4}
 \textit{Solve the exercises 5.46 to 5.48} \\
 
+\textbf{5.46} To generate documentation for Java code you can use the command
+line tool \lstinline{javadoc}. If we want to document a single file (class),
+we can run the following command
+
+\begin{lstlisting}
+$ cd /path/to/source
+$ javadoc -d myDocumentation File.java
+\end{lstlisting}
+
+This command will make a new directory named myDocumentation and there it
+places a bunch of HTML files including the documentation for the given file.
+If you want to document all Java files in that directory, you can change the
+command to 
+
+\begin{lstlisting}
+$ javadoc -d myDocumentation *.java
+\end{lstlisting}
+
+\textbf{5.47} Some javodoc key symbols from the TechSupport project are
+\begin{itemize}
+	\item @author
+	\item @version
+	\item @return
+\end{itemize}
+
+Not all of these key symbols do influence the formatting of the documentation
+but \lstinline{@return} does (see the documentation for details).
+
+\textbf{5.48} There is a nice table for all tags (key symbols) on wikipedia,
+see \url{http://de.wikipedia.org/w/index.php?title=Javadoc&oldid=124140284}
+
 \subsubsection*{Exercise 5}
 \textit{Comment one of your own projects with javadoc.} \\
 
