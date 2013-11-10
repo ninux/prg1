@@ -529,3 +529,22 @@ faculty of 4.} \\
 all integer values of an array. Make a documentation with javadoc.} \\
 
 \lstinputlisting{../workspace/Snippets/src/sum/Main.java}
+
+\subsubsection*{Additional Exercise}
+\textit{Think about a algorithm that can perform a permutation on an array.
+Lets say for the sequence 1,2,3,4.}
+
+The idea is that we have to use a tree. The tree shows every possible path
+that can be used for the rearrangement of the numbers. If we start with
+the number 1, what are the possible paths that we can go trough? See the
+graphical tree in picture \ref{pic:tree} to get an idea of it.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\textwidth]{tree.pdf}
+	\caption{Tree for permutation of 1,2,3,4 beginning with 1.}
+	\label{pic:tree}
+\end{figure}
+
+So we see, that the tricky part is at the end because the last two segments
+are turned around while the other are just incremented.
