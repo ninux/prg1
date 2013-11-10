@@ -500,16 +500,32 @@ public int coolMethod(int n)
 }
 \end{lstlisting}
 
+Since the call stack is growing up to 5, the method was called
+5 times and the parameter was 3. The following graphic shall explain
+why.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.6\textwidth]{callstack.pdf}
+	\caption{Graphical explanation of call stack rising.}
+	\label{pic:callstack}
+\end{figure}
+
 \subsubsection*{Exercise 8}
 \textit{Implement a recursive algorithm for the calculation of the
 faculty (see presentation ALG2, page 9). Debug you method for the
 faculty of 4.} \\
 
+\lstinputlisting{../workspace/Snippets/src/faculty/Main.java}
+
 \subsubsection*{Exercise 9}
 \textit{Implement a recursive method to print an array forwards and
  backwards (see presentation ALG2, pages 29 and 30).} \\
+
+\lstinputlisting{../workspace/Snippets/src/reverse/Main.java}
 
 \subsubsection*{Exercise 10}
 \textit{Implement a recursive method that is calculating the sum of
 all integer values of an array. Make a documentation with javadoc.} \\
 
+\lstinputlisting{../workspace/Snippets/src/sum/Main.java}

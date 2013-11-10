@@ -1,0 +1,18 @@
+package reverse;
+
+public class Main
+{
+	public static void main(String[] args)
+	{
+		
+	}
+	
+	public static void printBackAndForth(int[] array, int lenght, int index)
+	{
+		System.out.println(array[index]);
+		
+		if(index < (lenght-1)){
+			printBackAndForth(array, lenght, index+1);
+		}
+	}
+}
