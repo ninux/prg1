@@ -351,7 +351,8 @@
 	description={An interface in Java is used to agree
 		or declare signatures of methods that are shared over 
 		different classes. The interface is declaring which
-		methods exist or have to exist},
+		methods exist or have to exist. It can be used without
+		showing the implementation},
 	plural=interfaces,
 	sort=interface
 }
@@ -395,4 +396,104 @@
 		random numbers},
 	plural={random numbers},
 	sort={random number},
+}
+
+\newglossaryentry{library documentation}
+{
+	name={library documentation},
+	description={The Java class library documentation shows details about
+		all classes in the library. Using this documentation is 
+		essential in order to make good use of the library classes},
+	plural={library documentations},
+	sort={library documentation}
+}
+
+\newglossaryentry{map}
+{
+	name=map,
+	description={A map is a collection type. It stores key-value pairs as
+		entries and it stores each individual 
+		element (key) at most once. It does not maintain any specific 
+		order. A good use for maps is a phonebook, where every key
+		(person, name) is only once in the book},
+	plural=maps,
+	sort=map
+}
+
+\newglossaryentry{set}
+{
+	name=set,
+	description={A set is a collection type. It stores each individual 
+		element at most once. It does not maintain any specific order.
+		A good use for a set is to collect all used words in a string
+		(sentence, page, book), where you want to have every word 
+		only once},
+	plural=sets,
+	sort=set
+}
+
+\newglossaryentry{documentation}
+{
+	name=documentation,
+	description={Documentation in programming is very important and nobody
+		can achieve success in programming without a good use of
+		documentation. In Java there are some conventions on 
+		documentation but in general the following rule is the most
+		important: Write documentation (comments) so that you 
+		explain what something does but not how it does it. This is
+		an important aspect of desing pattern and strategy (see
+		\gls{information hiding}). 
+		Java has a tool named \lstinline!javadoc!
+		that is converting source comments into a HTML formatted
+		documentation},
+	plural=documentations,
+	sort=documentation
+}
+
+\newglossaryentry{information hiding}
+{
+	name={information hiding},
+	description={Information hiding is a principle that states that 
+		internal details of an implementation should be hidden
+		from the user of it. This shall ensure better modularization
+		and support abstraction. In Java this is done with the use
+		of an \gls{access modifier} like \lstinline!private! or
+		\lstinline!protected!},
+	plural={},
+	sort={information hiding}
+}
+
+\newglossaryentry{access modifier}
+{
+	name={access modifier},
+	description={A access modifier defines the visibility of the 
+		declared field, constructor or method. There are only four of
+		them in Java: 
+		\lstinline!private! (visible only from inside the same class), 
+		nothing specified aka. default (visible inside the same package),
+		\lstinline!protected! (visible form inside the same package 
+			and subclasses) and
+		\lstinline!public! (visible from everywhere)},
+	plural={access modifiers},
+	sort={access modifier}
+}
+
+\newglossaryentry{class variable}
+{
+	name={class variable},
+	description={In Java a class can also have a field in contrast to 
+		fields that belong to each and every object that is created.
+		Such a field is called class variable or 
+		\gls{static variable} and exists only once for all instances
+		of that class},
+	plural={class variables},
+	sort={class variable}
+}
+
+\newglossaryentry{static variable}
+{
+	name={static variable},
+	description={See \gls{class variable}},
+	plural={static variables},
+	sort={static variable}	
 }
