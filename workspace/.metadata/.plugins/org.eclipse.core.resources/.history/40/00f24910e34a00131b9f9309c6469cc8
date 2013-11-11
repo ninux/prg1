@@ -1,0 +1,24 @@
+package star;
+
+public class NameGenerator
+{
+	
+	public NameGenerator()
+	{
+		
+	}
+	
+	public String generateStarWarsName(	String yourLastName, 
+										String yourFirstName, 
+										String yourMothersMaidenName, 
+										String yourHomeTownName)
+	{
+		String newFirstName;
+		String newLastName;
+		
+		
+		
+		return "Default";
+	}
+	
+}

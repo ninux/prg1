@@ -1,0 +1,25 @@
+package star;
+
+public class NameGenerator
+{
+	
+	public NameGenerator()
+	{
+		
+	}
+	
+	public String generateStarWarsName(	String yourLastName, 
+										String yourFirstName, 
+										String yourMothersMaidenName, 
+										String yourHomeTownName)
+	{
+		String newFirstName;
+		String newLastName;
+		
+		newFirstName = yourLastName.substring(1,3) + yourFirstName.substring(0,1);
+		newLastName = yourMothersMaidenName.substring(0, 1) + yourHomeTownName.substring(0,2);
+		
+		return newFirstName + " " + newLastName;
+	}
+	
+}

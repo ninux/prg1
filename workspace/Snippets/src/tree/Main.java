@@ -9,8 +9,7 @@ public class Main
 	
 	public static void getTree(int[] array, int length, int index)
 	{
-		if(index < (length-1)){
-			
+		if(index != (length-2)){
 		}
 	}
 }

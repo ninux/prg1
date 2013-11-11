@@ -1,0 +1,15 @@
+package star;
+
+public class NameGenerator
+{
+	
+	public NameGenerator()
+	{
+		
+	}
+	
+	public String generatStarWarsName()
+	{
+		return "Default";
+	}
+}
