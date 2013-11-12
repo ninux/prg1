@@ -13,7 +13,7 @@
 	name=class,
 	description={A class describes the kind of an object. This is done
 		by giving instance variables and methods. The objects 
-		represents individual instatioations of the class},
+		represents individual instatiations of the class},
 	plural=classes,
 	sort=class
 }
@@ -82,8 +82,8 @@
 \newglossaryentry{field}
 {
 	name=field,
-	description={Fields store data for an object to use. Fields are also
-		known as instance variables.},
+	description={Fields store data for an object. Fields are also
+		known as instance or member variables},
 	plural=fields,
 	sort=field
 }
@@ -101,7 +101,7 @@
 \newglossaryentry{accessor}
 {
 	name=accessor,
-	description={A accessor or accessor method is a method that provides
+	description={An accessor or accessor method is a method that provides
 		access to information about an object's state (get-methods)},
 	plural=accessors,
 	sort=accessor
@@ -141,7 +141,7 @@
 	name=assignment,
 	description={An assignment (statement) is a directive to assign a
 		value into a variable, for example 
-		\lstinline{speed = newSpeed;} is an assignment.},
+		\lstinline{speed = newSpeed;} is an assignment},
 	plural=assignments,
 	sort=assignment
 }
@@ -208,7 +208,7 @@
 		focus attention on a higher level of a problem. As an example
 		think about an car as a Parking-Boy. You would ignore how
 		many seats the cas has, but not how big it is, because it's
-		relevant for your task.},
+		relevant for your task},
 	plural=abstractions,
 	sort=abstraction
 }
@@ -466,7 +466,7 @@
 \newglossaryentry{access modifier}
 {
 	name={access modifier},
-	description={A access modifier defines the visibility of the 
+	description={An access modifier defines the visibility of the 
 		declared field, constructor or method. There are only four of
 		them in Java: 
 		\lstinline!private! (visible only from inside the same class), 
@@ -605,23 +605,35 @@
 \newglossaryentry{code coverage}
 {
 	name={code coverage},
-	description={},
-	plural=,
+	description={Code coverage is a testmethod in software development.
+		Using this method the testspecification is made such that
+		every possible path in the code is taken at least once},
+	plural={code coverages},
 	sort={code coverage}
 }
 
 \newglossaryentry{code review}
 {
 	name={code review},
-	description={},
-	plural=,
+	description={Code review or code inspection is a systematic
+		examination of source code. Reviews are done in various 
+		forms such as pair programming, informal walkthroughs, 
+		and formal inspections. Usually a code review is done
+		by a person that hadn't developed the code. This is rising
+		the chance to find overlooked mistakes in the development
+		phase of the code},
+	plural={code reviews},
 	sort={code review}
 }
 
 \newglossaryentry{walkthrough}
 {
 	name=walkthrough,
-	description={},
+	description={A walkthrough is a examination of souce code done by
+		at least two personen where one is the developer of the 
+		source code and leads the examination and the other is a
+		person that was not involved in the development. Usually
+		the code isn't examined into details by a walkthrough},
 	plural=walkthroughs,
 	sort=walkthrough
 }
@@ -629,7 +641,13 @@
 \newglossaryentry{debugger}
 {
 	name=debugger,
-	description={},
+	description={A debugger is a software tool used by programmers to
+		do a examination of their own code. It allows usually a 
+		step by step examination with and without breakpoints and
+		supports the view on variables and other data during the
+		procedure. Debuggers can be used standalone or inplemneted
+		in a so called IDE (Itegrated Development Environment) like
+		eclipse, NetBeans or BlueJ},
 	plural=debuggers,
 	sort=debugger
 }
