@@ -5,6 +5,11 @@ intro
 ## ignore java specific files
 *.class
 
+## ignore sclipse specific data
+.log
+.plugins
+.metadata
+
 ## generic files to ignore
 *~
 *.lock
