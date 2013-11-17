@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy package &apos;multiply&apos; to &apos;Snippets/src&apos;&#x0A;- Original project: &apos;Multiply&apos;&#x0A;- Destination element: &apos;Snippets/src&apos;&#x0A;- Original element: &apos;Multiply/src/multiply&apos;" description="Copy package" destination="=Snippets/src" element1="/src&lt;multiply" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1383473704112" version="1.0"/>
-</session>

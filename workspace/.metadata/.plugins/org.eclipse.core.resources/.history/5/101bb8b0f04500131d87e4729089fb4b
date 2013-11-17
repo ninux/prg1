@@ -1,9 +1,0 @@
-package list;
-
-import java.util.ArrayList;
-
-public class ListIteratorApplication
-{
-	ArrayList<String> sentence = new ArrayList<String>();
-	sentence.
-}
