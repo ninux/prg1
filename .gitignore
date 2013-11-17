@@ -7,8 +7,8 @@ intro
 
 ## ignore sclipse specific data
 .log
-.plugins
-.metadata
+.plugins/
+.metadata/
 
 ## generic files to ignore
 *~
