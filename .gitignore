@@ -6,9 +6,9 @@ intro
 *.class
 
 ## ignore sclipse specific data
-.log
-.plugins/
-.metadata/
+*.log
+*.plugins/
+*.metadata/
 
 ## generic files to ignore
 *~
