@@ -64,11 +64,11 @@ of a cuboid with the sides a,b,c. Use the following table.}
 
 \begin{table}[h!]
 	\centering
-	\begin{tabular}{l c p{4cm} p{4cm} c}
+	\begin{tabular}{l c p{6cm} p{4cm} c}
 	Case & Case No. & Input & Output & Passed \\
 	\hline
-	normal 		& 1 & & & \\
-	normal 		& 2 & & & \\
+	normal 		& 1 & $0<a,b,c<$ \lstinline!INT_MAX_VALUE! & $>0$ & yes \\
+	normal 		& 2 & $0 \leq a,b,c<$ \lstinline!INT_MAX_VALUE!  & $\geq 0$ & yes \\
 	normal 		& 3 & & & \\
 	acceptable 	& 4 & & & \\
 	acceptable 	& 5 & & & \\
@@ -87,6 +87,8 @@ of a cuboid with the sides a,b,c. Use the following table.}
 \subsubsection*{Exercise 10}
 \textit{Implement a pseudo code for the "towers of hanoi" in Java.} \\
 
+\lstinputlisting{../workspace/HanoiTowers/src/towers/Main.java}
+
 \subsubsection*{Exercise 11}
-\textit{Observe the "`open"' methods that are frozen on the stack.
+\textit{Observe the open methods that are frozen on the stack.
 Use the Call Graph from the BlueJ Debugger for observation.} \\
