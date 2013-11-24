@@ -142,24 +142,71 @@ one logical entity".
 \subsubsection*{Exercise 18}
 \textit{Illustrate the difference between satble and instabe sorting with a 
 simple example.} \\
+Stable sorting means that the order of same keys is preserved in the
+result and vice versa. See the following example:
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{l c c c c c}
+		array	& $[r_0]$ & $[r_1]$ & $[r_2]$ & $[r_3]$ & $[r_4]$ \\ 
+		\hline
+		unsorted 	& $1$ & $12_1$ & $4$ & $12_2$ & $3$ \\
+		stable sorted 	& $1$ & $3$ & $4$ & $12_1$ & $12_2$ \\
+		instable sorted	& $1$ & $3$ & $4$ & $12_2$ & $12_1$
+	\end{tabular}
+	\caption{Comparison of stable and unstable sorting.}
+\end{table}
 
 \subsubsection*{Exercise 19}
 \textit{What's the effort for simple or direct sorting algorithms?} \\
+Simple or direct sorting algorithms have an effort of $O(n^2)$
 
 \subsubsection*{Exercise 20}
 \textit{What's the effort for higher sorting algorithms?} \\
+Higher sorting algorithms have an effort of $O(n \cdot log(n))$
 
 \subsubsection*{Exercise 21}
 \textit{Enumerate three simple or direct sorting algorithms.} \\
 
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{l l l}
+		Name		& type		& $O$ \\
+		\hline
+		Insertion sort	& stable	& $O(n^2)$ \\
+		Selection sort	& instable	& $O(n^2)$ \\
+		Shellsort	& instable	& $O(n^2)$ \\
+		Bubble sort	& stable	& $O(n^2)$ 
+	\end{tabular}
+	\caption{Basic sorting algorithms}
+	\label{table:sorting-algorithms}
+\end{table}
+
 \subsubsection*{Exercise 22}
 \textit{Which of the sorting algorithms that we talked about in class 
 are instable?} \\
+See the table \ref{table:sorting-algorithms}.
 
 \subsubsection*{Exercise 23}
 \textit{At the analysis of srting algorithms it is important to know how to
 calculate the following sum. Solve the problem for $x$.} \\
-\[ 1 + 2 + 3 + \dots + n = \sum_{i=1}^{n} i = x \]
+\[ 1 + 2 + 3 + \dots + n =  \sum_{i=1}^{n} i = x \]
+This is a limit of sequence problem which has the form
+\[ S_n = \sum_{k=1}^n a_k = a_1 + a_2 + a_3 + \dots + a_n \]
+This can be either geometrical or arithmetical. In this case it's an 
+arithmetical one. So it has the rule 
+\[ S_n = n \cdot \left( a_1 + d \cdot \frac{n-1}{2}\right) = n \cdot \frac{a_1+a_n}{2} \]
+Substituting with the given values we get the solution 
+\[ S_n = n \cdot \frac{1+n}{2} \]
+The following examples shall give the prove
+\[ \begin{array}{l l l}
+	\sum_{i=1}^{n=1} &= 1 \\
+	\sum_{i=1}^{n=2} &= 1 + 2 = 3 \\
+	\sum_{i=1}^{n=3} &= 1 + 2 + 3 = 6 \\
+	\sum_{i=1}^{n=4} &= 1 + 2 + 3 + 4 = 10 \\
+\end{array} \]
+So the solution of this problem is 
+\[ \sum_{i=1}^{n} i = \lim_{i \rightarrow n} n \cdot \frac{1+n}{2} \]
 
 \subsubsection{Optional Exercises about chapter 6.13 (p. 226-231)}
 
