@@ -144,7 +144,7 @@ public class SalesItem
         	}
         	return best;
         }else{
-        	return null;
+        	return new Comment("System", "no comment yet", 3);
         }
     }
     

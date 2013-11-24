@@ -1,0 +1,146 @@
+\section{Designing classes}
+
+
+\subsection{Selfstudy-Questions OOP9}
+
+\subsubsection{Chapter 6.1 to 6.4 - Code duplication}
+
+\subsubsection*{Exercise 1}
+\textit{Solve the exercises 6.1, 6.2, 6.4 and 6.5} \\
+
+\subsubsection*{Exercise 2}
+\textit{What is coupling and how should it be?} \\
+Coupling discribes iterconnectedness of classes. This means, that the 
+coupling is a description for the interface of classes or the connection
+between classes. A good source code has a loose or weak coupling which means
+that the implementation of a class can be changed easily without effecting
+the application.
+
+\subsubsection*{Exercise 3}
+\textit{What is cohesion and how should it be?} \\
+Cohesion is a term that describes how well a unit (package, class, method) 
+maps to a logical task or entity. Ideally, one unit of code should be 
+responsible for one cohesive task (one code -- one job).
+
+\subsubsection*{Exercise 4}
+\textit{What's the problem with code duplication?} \\
+The problem at code duplication is that the maintenance of an application is
+going to be ineffective and buggy. Especially the danger of changing not all
+of the duplicates can lead to painful bugs that are hard to find. After all
+code duplication is also just a sign for bad design, so it has to be avoided.
+
+\subsubsection*{Exercise 5}
+\textit{Code duplication is a symptom for what? Bad coupling or bad cohesion? } \\
+Code duplication is usually a sign of bad cohesion because one job should be done
+by one code. 
+
+\subsubsection{Chapter 6.5 to 6.11 - Cohesion}
+
+\subsubsection*{Exercise 6}
+\textit{Solve the exercises 6.6 to 6.8, 6.11, 6.14, 6.16 and 6.17} \\
+
+\subsubsection*{Exercise 7}
+\textit{The Room class is now managing neighboring rooms with a HashMap.
+To do so the program had to be changed at a lot of different places. 
+Is this an evidence of strong or weak coupling?} \\
+This is a clear evidence of tight or strong coupling.
+
+\subsubsection*{Exercise 8}
+\textit{What is information hiding or encapsulation and what's the effect
+of this fundamental principle?} \\
+Information hiding or encapsulation is a fundamental priciple of good 
+class design. In short it says that a user of a class should only know
+that much that is needed to use it. This means a class should only
+provide information about what it does and not how it does that.
+The effect of this priciple is that we can change the implementation
+of something without effecting the rest of the application, so it 
+supports automatically a weak or loose coupling.
+
+\subsubsection*{Exercise 9}
+\textit{What's the meaning of the concept "localizing change"?} \\
+The concept of "localizing change" says that it should be clear where to make
+changes by improving the code. Ideally, only a single class needs to be changed
+to make a modification. This is primarily achieved by following the general
+design rules such as responsibility-driven design, loose coupling and strong 
+cohesion.
+
+\subsubsection*{Exercise 10}
+\textit{What's the difference between explicit and implicit coupling?} \\
+Explicit coupling is a coupling that is obvious, not just for a human reader
+of the code but also for the compiler. Implicit coupling is the worst kind
+of a strong coupling because it is not obvious, typically neither for a 
+human reader nor the compiler. This is often a symptom of not following
+the rule of responsibility-driven design.
+
+\subsubsection*{Exercise 11}
+\textit{Do cohesive methods make also sense?} \\
+Of course they make sense. It's just an other level of code base but
+the rule is the same either it's a method, class, package or application.
+The cohesion should be as strong as possible in the following manner:
+\begin{itemize}
+	\item method -- very strong
+	\item class -- less stronger than a method
+	\item package -- less stronger than a class
+	\item application -- less stronger than a package
+\end{itemize} 
+
+\subsubsection*{Exercise 12}
+\textit{What are the two most powerful benefits of strong cohesion?} \\
+The two most powerful benefits of strong cohesion are 
+\begin{itemize}
+	\item readability -- easy to understand and to maintain
+	\item reuse -- one particular job can be used more than once 
+\end{itemize}
+
+\subsubsection{Chapter 6.12 to 6.14 - Design guidelines}
+
+\subsubsection*{Exercise 13}
+\textit{Solve the exercise 6.27} \\
+
+\subsubsection*{Exercise 14}
+\textit{What's the reason for refactoring?} \\
+
+\subsubsection*{Exercise 15}
+\textit{Describe the method or the steps at a refactoring.} \\
+
+\subsubsection*{Exercise 16}
+\textit{At which point is a method too long?} \\
+
+\subsubsection*{Exercise 17}
+\textit{At which point is a class too complex?} \\
+
+
+\subsection{Selfstudy-Questions ALG4}
+
+\subsubsection*{Exercise 18}
+\textit{Illustrate the difference between satble and instabe sorting with a 
+simple example.} \\
+
+\subsubsection*{Exercise 19}
+\textit{What's the effort for simple or direct sorting algorithms?} \\
+
+\subsubsection*{Exercise 20}
+\textit{What's the effort for higher sorting algorithms?} \\
+
+\subsubsection*{Exercise 21}
+\textit{Enumerate three simple or direct sorting algorithms.} \\
+
+\subsubsection*{Exercise 22}
+\textit{Which of the sorting algorithms that we talked about in class 
+are instable?} \\
+
+\subsubsection*{Exercise 23}
+\textit{At the analysis of srting algorithms it is important to know how to
+calculate the following sum. Solve the problem for $x$.} \\
+\[ 1 + 2 + 3 + \dots + n = \sum_{i=1}^{n} i = x \]
+
+\subsubsection{Optional Exercises about chapter 6.13 (p. 226-231)}
+
+\subsubsection*{Exercise 24}
+\textit{What's the difference between a class type (with the keyword class)
+and a enumeration type (with the keyword enum)?} \\
+
+\subsubsection*{Exercise 25}
+\textit{Every enumeration type knows a method values(). What's the return
+value of that method?} \\
+

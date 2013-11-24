@@ -2,7 +2,7 @@ package towers;
 
 public class Main{
 	public static void main(String[] args){
-		moveDisk("A", "B", "C", 4);
+		moveDisk("A", "B", "C", 3);
 	}
 
 	public static void moveDisk(String from, String via, String to, int n){
