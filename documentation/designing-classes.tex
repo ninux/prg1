@@ -99,16 +99,43 @@ The two most powerful benefits of strong cohesion are
 
 \subsubsection*{Exercise 14}
 \textit{What's the reason for refactoring?} \\
+The reasons for refactoring are mostly changed functionality and
+requirements. The refactoring itself is a process of rethinking
+and redesigning existing classes and methods.
 
 \subsubsection*{Exercise 15}
 \textit{Describe the method or the steps at a refactoring.} \\
+The refactoring follows usually the following steps:
+\begin{enumerate}
+	\item 	Change the internal structure but don't add new 
+		functionality to the code.
+		After the restructuration everything should work as before.
+		Therefore the previous test should be ran again.
+	\item	Since the restructuration is done and the tests gone well,
+		the new functionalities can be implemented. Of course the
+		tests should be ran again to prove the operation of the new
+		developed code.
+\end{enumerate}
 
 \subsubsection*{Exercise 16}
 \textit{At which point is a method too long?} \\
+A method is too long if the cohesion is not strong. In such a case we 
+should consider to make helper methods to outsource details from a 
+method. An other unwritten rule is to check the indentations. If the code
+has an indentation degree far more than three, you should probably change
+your code. 
+
+Simplified one could say "a method is too long if it does more than one 
+logical task".
 
 \subsubsection*{Exercise 17}
 \textit{At which point is a class too complex?} \\
+A class is to complex if there are things that don't belong there following
+the responsibility-driven design rule. This leads to a creation of a new 
+class or making the changes into an other class.
 
+Simplified one could say "a class is too complex if it represents more than
+one logical entity".
 
 \subsection{Selfstudy-Questions ALG4}
 
