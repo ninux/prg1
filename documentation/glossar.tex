@@ -455,10 +455,12 @@
 	name={information hiding},
 	description={Information hiding is a principle that states that 
 		internal details of an implementation should be hidden
-		from the user of it. This shall ensure better modularization
+		from the user of it. 
+		This shall ensure better modularization
 		and support abstraction. In Java this is done with the use
 		of an \gls{access modifier} like \lstinline!private! or
-		\lstinline!protected!},
+		\lstinline!protected!. A synonym for information 
+		hiding is \gls{encapsulation}},
 	plural={},
 	sort={information hiding}
 }
@@ -651,4 +653,77 @@
 	plural=debuggers,
 	sort=debugger
 }
+
+\newglossaryentry{coupling}
+{
+	name=coupling,
+	description={Coupling describes the interconnectedness
+		of classes. Classes that have a lot of dependencies to
+		other classes are strong coupled. Good classes have a
+		weak or loose coupling, which means that they have
+		no or few dependencies to other classes. Classes with
+		a weak coupling for example do communicated only over
+		well defined and small interfaces.},
+	plural=couplings,
+	sort=coupling
+}
+
+\newglossaryentry{cohesion}
+{
+	name=cohesion,
+	description={Cohesion describes the internal mapping as a 
+		logical entity (or task). If a class for example is
+		called highly cohesive, this means that the internals
+		are responsible for a well defined task or entity 
+		(one code -- one job)},
+	plural=cohesion,
+	sort=cohesion
+}
+
+\newglossaryentry{code duplication}
+{
+	name={code duplication},
+	description={If the same or logically similar code is placed
+		on differents places in a source code, we say that there
+		is code duplication. It is a sign of bad design 
+		(especially for bad cohesion) and has
+		to be avoided since there are also issues on maintenance
+		and bug appearances},
+	plural={code duplication},
+	sort={code duplication}
+}
+
+\newglossaryentry{encapsulation}
+{
+	name=encapsulation,
+	description={Encapsulation is used as a synonym for 
+		\gls{information hiding}. Its guidline says that only
+		information about what a class can do should be visible
+		to the outside, not about how it does it. This leads
+		to a better design and reduces the coupling},
+	plural=encapsulations,
+	sort=encapsulation
+}
+
+\newglossaryentry{responsibility-driven design}
+{
+	name={responsibility-driven design},
+	description={Responsibility-driven design expresses the idea that
+		each class should be responsible for handling its own
+		data},
+	plural={responsibility-driven designs},
+	sort={responsibility-driven design}
+}
+
+\newglossaryentry{refactoring}
+{
+	name=refactoring,
+	description={Refactoring is the activity of restructuring
+		existing code to adapt it to changed functionality and
+		requirements. Most important is that the design is 
+		improved and not what it does},
+	plural=refactoring,
+	sort=refactoring
+}
+
 
